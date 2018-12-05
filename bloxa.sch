@@ -738,12 +738,6 @@ DIN A3, landscape with location and doc. field</description>
 <text x="0" y="3.556" size="1.27" layer="96" font="vector" ratio="15" align="center">&gt;VALUE</text>
 <pin name="VDD_5V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
-<symbol name="VBAT" urn="urn:adsk.eagle:symbol:5017780/1" library_version="1">
-<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
-<text x="0" y="3.556" size="1.27" layer="96" font="vector" ratio="15" align="center">&gt;VALUE</text>
-<pin name="VBAT" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
 <symbol name="VDC" urn="urn:adsk.eagle:symbol:5017760/1" library_version="1">
 <wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
 <wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
@@ -786,18 +780,6 @@ DIN A3, landscape with location and doc. field</description>
 <deviceset name="5V" urn="urn:adsk.eagle:component:5017815/1" prefix="+P" library_version="1">
 <gates>
 <gate name="G$1" symbol="5V" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="VBAT" urn="urn:adsk.eagle:component:5017810/1" prefix="+P" library_version="1">
-<gates>
-<gate name="G$1" symbol="VBAT" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -3485,7 +3467,7 @@ http://www.bccomponents.com/</description>
 <attributes>
 </attributes>
 <variantdefs>
-<variantdef name="Basic"/>
+<variantdef name="Basic" current="yes"/>
 </variantdefs>
 <classes>
 <class number="0" name="default" width="0" drill="0">
@@ -3496,7 +3478,6 @@ http://www.bccomponents.com/</description>
 </class>
 </classes>
 <parts>
-<part name="+P15" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="VBAT" device=""/>
 <part name="+P16" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="5V" device=""/>
 <part name="GND17" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="GND" device="" value="GND"/>
 <part name="PAD1" library="PADS" library_urn="urn:adsk.eagle:library:3188696" deviceset="PAD" device="-1X1.5" value="PAD-1X1.5">
@@ -3706,16 +3687,23 @@ http://www.bccomponents.com/</description>
 <part name="GND10" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="PGND" device="" value="PGND"/>
 <part name="D1" library="TVS_diodes" library_urn="urn:adsk.eagle:library:3333632" deviceset="PTVS36VP1UP,115" device="-SOD128" package3d_urn="urn:adsk.eagle:package:6533206/2" technology="-36V"/>
 <part name="D2" library="TVS_diodes" library_urn="urn:adsk.eagle:library:3333632" deviceset="PTVS36VP1UP,115" device="-SOD128" package3d_urn="urn:adsk.eagle:package:6533206/2" technology="-36V"/>
-<part name="C6" library="rc" library_urn="urn:adsk.eagle:library:2539423" deviceset="CPOL" device="-RADIAL_SIDE-8X21.5" package3d_urn="urn:adsk.eagle:package:7189333/2" value="180µF"/>
-<part name="C1" library="rc" library_urn="urn:adsk.eagle:library:2539423" deviceset="CPOL" device="-RADIAL_SIDE-8X21.5" package3d_urn="urn:adsk.eagle:package:7189333/2" value="180µF"/>
+<part name="C100" library="rc" library_urn="urn:adsk.eagle:library:2539423" deviceset="CPOL" device="-RADIAL_SIDE-8X21.5" package3d_urn="urn:adsk.eagle:package:7189333/2" value="180µF">
+<variant name="Basic" populate="no"/>
+</part>
+<part name="C101" library="rc" library_urn="urn:adsk.eagle:library:2539423" deviceset="CPOL" device="-RADIAL_SIDE-8X21.5" package3d_urn="urn:adsk.eagle:package:7189333/2" value="180µF">
+<variant name="Basic" populate="no"/>
+</part>
 <part name="GND2" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="PGND" device="" value="PGND"/>
 <part name="+P2" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="VDC" device=""/>
-<part name="C2" library="rc" library_urn="urn:adsk.eagle:library:2539423" deviceset="CPOL" device="-RADIAL_SIDE-8X21.5" package3d_urn="urn:adsk.eagle:package:7189333/2" value="180µF"/>
+<part name="C102" library="rc" library_urn="urn:adsk.eagle:library:2539423" deviceset="CPOL" device="-RADIAL_SIDE-8X21.5" package3d_urn="urn:adsk.eagle:package:7189333/2" value="180µF">
+<variant name="Basic" populate="no"/>
+</part>
 <part name="CON1" library="pinhead" library_urn="urn:adsk.eagle:library:2540341" deviceset="PINHEAD_1X02" device="-2.54" package3d_urn="urn:adsk.eagle:package:2540385/2">
 <variant name="Basic" populate="no"/>
 </part>
 <part name="GND3" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="PGND" device="" value="PGND"/>
 <part name="+P5" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="VDC" device=""/>
+<part name="+P7" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="VDC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3769,9 +3757,6 @@ as close as possible to the power transistors.</text>
 <wire x1="375.92" y1="134.62" x2="289.56" y2="134.62" width="0.1524" layer="97" style="shortdash"/>
 </plain>
 <instances>
-<instance part="+P15" gate="G$1" x="40.64" y="238.76" smashed="yes">
-<attribute name="VALUE" x="40.64" y="242.316" size="1.27" layer="96" font="vector" ratio="15" align="center"/>
-</instance>
 <instance part="+P16" gate="G$1" x="45.72" y="238.76" smashed="yes">
 <attribute name="VALUE" x="45.72" y="242.316" size="1.27" layer="96" font="vector" ratio="15" align="center"/>
 </instance>
@@ -4204,12 +4189,12 @@ as close as possible to the power transistors.</text>
 <attribute name="NAME" x="124.46" y="228.6" size="1.27" layer="95" font="vector" ratio="15" rot="R90" align="center"/>
 <attribute name="MANF#" x="129.54" y="228.6" size="1.016" layer="95" font="vector" ratio="15" rot="R90" align="center"/>
 </instance>
-<instance part="C6" gate="G$1" x="142.24" y="231.14" smashed="yes" rot="R90">
+<instance part="C100" gate="G$1" x="142.24" y="231.14" smashed="yes" rot="R90">
 <attribute name="NAME" x="143.2814" y="232.791" size="1.27" layer="95" font="vector" rot="R90" align="center-left"/>
 <attribute name="VALUE" x="143.2306" y="229.489" size="1.27" layer="96" font="vector" rot="R270" align="center-left"/>
 <attribute name="PACKAGE" x="141.478" y="229.616" size="0.762" layer="97" font="vector" rot="R90" align="center-right"/>
 </instance>
-<instance part="C1" gate="G$1" x="149.86" y="231.14" smashed="yes" rot="R90">
+<instance part="C101" gate="G$1" x="149.86" y="231.14" smashed="yes" rot="R90">
 <attribute name="NAME" x="150.9014" y="232.791" size="1.27" layer="95" font="vector" rot="R90" align="center-left"/>
 <attribute name="VALUE" x="150.8506" y="229.489" size="1.27" layer="96" font="vector" rot="R270" align="center-left"/>
 <attribute name="PACKAGE" x="149.098" y="229.616" size="0.762" layer="97" font="vector" rot="R90" align="center-right"/>
@@ -4220,7 +4205,7 @@ as close as possible to the power transistors.</text>
 <instance part="+P2" gate="G$1" x="157.48" y="236.22" smashed="yes">
 <attribute name="VALUE" x="157.48" y="239.776" size="1.27" layer="96" font="vector" ratio="15" align="center"/>
 </instance>
-<instance part="C2" gate="G$1" x="157.48" y="231.14" smashed="yes" rot="R90">
+<instance part="C102" gate="G$1" x="157.48" y="231.14" smashed="yes" rot="R90">
 <attribute name="NAME" x="158.5214" y="232.791" size="1.27" layer="95" font="vector" rot="R90" align="center-left"/>
 <attribute name="VALUE" x="158.4706" y="229.489" size="1.27" layer="96" font="vector" rot="R270" align="center-left"/>
 <attribute name="PACKAGE" x="156.718" y="229.616" size="0.762" layer="97" font="vector" rot="R90" align="center-right"/>
@@ -4233,6 +4218,9 @@ as close as possible to the power transistors.</text>
 </instance>
 <instance part="+P5" gate="G$1" x="119.38" y="236.22" smashed="yes">
 <attribute name="VALUE" x="119.38" y="239.776" size="1.27" layer="96" font="vector" ratio="15" align="center"/>
+</instance>
+<instance part="+P7" gate="G$1" x="40.64" y="238.76" smashed="yes">
+<attribute name="VALUE" x="40.64" y="242.316" size="1.27" layer="96" font="vector" ratio="15" align="center"/>
 </instance>
 </instances>
 <busses>
@@ -4318,14 +4306,6 @@ as close as possible to the power transistors.</text>
 <wire x1="48.26" y1="172.72" x2="45.72" y2="172.72" width="0.1524" layer="91"/>
 <label x="45.72" y="172.72" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="PAD20" gate="G$1" pin="P$1"/>
-</segment>
-</net>
-<net name="VBAT" class="1">
-<segment>
-<wire x1="48.26" y1="231.14" x2="40.64" y2="231.14" width="0.1524" layer="91"/>
-<pinref part="+P15" gate="G$1" pin="VBAT"/>
-<wire x1="40.64" y1="231.14" x2="40.64" y2="238.76" width="0.1524" layer="91"/>
-<pinref part="PAD3" gate="G$1" pin="P$1"/>
 </segment>
 </net>
 <net name="PHASE_A_GND" class="0">
@@ -4838,12 +4818,12 @@ as close as possible to the power transistors.</text>
 <segment>
 <pinref part="GND37" gate="G$1" pin="PGND"/>
 <wire x1="142.24" y1="226.06" x2="142.24" y2="228.6" width="0.1524" layer="91"/>
-<pinref part="C6" gate="G$1" pin="-"/>
+<pinref part="C100" gate="G$1" pin="-"/>
 </segment>
 <segment>
 <pinref part="GND38" gate="G$1" pin="PGND"/>
 <wire x1="149.86" y1="226.06" x2="149.86" y2="228.6" width="0.1524" layer="91"/>
-<pinref part="C1" gate="G$1" pin="-"/>
+<pinref part="C101" gate="G$1" pin="-"/>
 </segment>
 <segment>
 <wire x1="236.22" y1="177.8" x2="236.22" y2="180.34" width="0.1524" layer="91"/>
@@ -4894,7 +4874,7 @@ as close as possible to the power transistors.</text>
 <segment>
 <pinref part="GND2" gate="G$1" pin="PGND"/>
 <wire x1="157.48" y1="226.06" x2="157.48" y2="228.6" width="0.1524" layer="91"/>
-<pinref part="C2" gate="G$1" pin="-"/>
+<pinref part="C102" gate="G$1" pin="-"/>
 </segment>
 <segment>
 <pinref part="GND3" gate="G$1" pin="PGND"/>
@@ -4927,12 +4907,12 @@ as close as possible to the power transistors.</text>
 <segment>
 <wire x1="149.86" y1="236.22" x2="149.86" y2="233.68" width="0.1524" layer="91"/>
 <pinref part="+P19" gate="G$1" pin="VDC"/>
-<pinref part="C1" gate="G$1" pin="+"/>
+<pinref part="C101" gate="G$1" pin="+"/>
 </segment>
 <segment>
 <wire x1="142.24" y1="236.22" x2="142.24" y2="233.68" width="0.1524" layer="91"/>
 <pinref part="+P20" gate="G$1" pin="VDC"/>
-<pinref part="C6" gate="G$1" pin="+"/>
+<pinref part="C100" gate="G$1" pin="+"/>
 </segment>
 <segment>
 <pinref part="C18" gate="G$1" pin="2"/>
@@ -4971,7 +4951,7 @@ as close as possible to the power transistors.</text>
 <segment>
 <wire x1="157.48" y1="236.22" x2="157.48" y2="233.68" width="0.1524" layer="91"/>
 <pinref part="+P2" gate="G$1" pin="VDC"/>
-<pinref part="C2" gate="G$1" pin="+"/>
+<pinref part="C102" gate="G$1" pin="+"/>
 </segment>
 <segment>
 <pinref part="D2" gate="G$1" pin="C"/>
@@ -4985,6 +4965,12 @@ as close as possible to the power transistors.</text>
 <pinref part="BAT+" gate="G$1" pin="P$1"/>
 <pinref part="+P5" gate="G$1" pin="VDC"/>
 <wire x1="119.38" y1="236.22" x2="119.38" y2="233.68" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="48.26" y1="231.14" x2="40.64" y2="231.14" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="231.14" x2="40.64" y2="238.76" width="0.1524" layer="91"/>
+<pinref part="PAD3" gate="G$1" pin="P$1"/>
+<pinref part="+P7" gate="G$1" pin="VDC"/>
 </segment>
 </net>
 <net name="N$17" class="0">
