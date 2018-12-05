@@ -870,7 +870,7 @@ DIN A3, landscape with location and doc. field</description>
 <circle x="0" y="0" radius="0.9" width="0.1" layer="21"/>
 </package>
 <package name="HOLE_1.5" urn="urn:adsk.eagle:footprint:3332367/2" locally_modified="yes" library_version="8" library_locally_modified="yes">
-<pad name="P$1" x="0" y="0" drill="1.5" diameter="2.4"/>
+<pad name="P$1" x="0" y="0" drill="1.5" diameter="2.35"/>
 <text x="0" y="2.54" size="1" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
 <package name="DUAL_PURPOSE_HOLE_1" urn="urn:adsk.eagle:footprint:4854321/1" library_version="7" library_locally_modified="yes">
@@ -3467,7 +3467,7 @@ http://www.bccomponents.com/</description>
 <attributes>
 </attributes>
 <variantdefs>
-<variantdef name="Basic" current="yes"/>
+<variantdef name="Basic"/>
 </variantdefs>
 <classes>
 <class number="0" name="default" width="0" drill="0">
