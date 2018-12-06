@@ -3545,7 +3545,6 @@ http://www.bccomponents.com/</description>
 </classes>
 <parts>
 <part name="+P16" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="5V" device=""/>
-<part name="GND17" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="GND" device="" value="GND"/>
 <part name="PAD1" library="PADS" library_urn="urn:adsk.eagle:library:3188696" deviceset="PAD" device="-1X1.5" value="PAD-1X1.5">
 <variant name="Basic" populate="no"/>
 </part>
@@ -3773,6 +3772,7 @@ http://www.bccomponents.com/</description>
 <part name="+P5" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="VDC" device=""/>
 <part name="+P7" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="VDC" device=""/>
 <part name="IC2" library="serial_interfaces" library_urn="urn:adsk.eagle:library:4770999" deviceset="TJA1051(X)/3" device="-SO8" package3d_urn="urn:adsk.eagle:package:4771007/3"/>
+<part name="GND4" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="PGND" device="" value="PGND"/>
 </parts>
 <sheets>
 <sheet>
@@ -3828,9 +3828,6 @@ as close as possible to the power transistors.</text>
 <instances>
 <instance part="+P16" gate="G$1" x="45.72" y="238.76" smashed="yes">
 <attribute name="VALUE" x="45.72" y="242.316" size="1.27" layer="96" font="vector" ratio="15" align="center"/>
-</instance>
-<instance part="GND17" gate="1" x="38.1" y="226.06" smashed="yes">
-<attribute name="VALUE" x="38.1" y="224.79" size="1.27" layer="96" font="vector" ratio="15" align="center"/>
 </instance>
 <instance part="PAD1" gate="G$1" x="50.8" y="236.22" smashed="yes" rot="MR0">
 <attribute name="NAME" x="50.8" y="237.49" size="1.27" layer="95" font="vector" ratio="15" rot="MR0" align="center"/>
@@ -4291,6 +4288,9 @@ as close as possible to the power transistors.</text>
 <instance part="IC2" gate="G$1" x="322.58" y="116.84" smashed="yes">
 <attribute name="NAME" x="331.47" y="130.556" size="1.27" layer="95" font="vector" ratio="15" align="center"/>
 <attribute name="MANF#" x="331.47" y="115.824" size="1.27" layer="95" font="vector" ratio="15" align="center"/>
+</instance>
+<instance part="GND4" gate="G$1" x="38.1" y="228.6" smashed="yes">
+<attribute name="VALUE" x="38.1" y="227.33" size="1.27" layer="97" font="vector" ratio="15" align="center"/>
 </instance>
 </instances>
 <busses>
@@ -4757,12 +4757,6 @@ as close as possible to the power transistors.</text>
 </net>
 <net name="GND" class="0">
 <segment>
-<pinref part="GND17" gate="1" pin="GND"/>
-<wire x1="48.26" y1="233.68" x2="38.1" y2="233.68" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="233.68" x2="38.1" y2="228.6" width="0.1524" layer="91"/>
-<pinref part="PAD2" gate="G$1" pin="P$1"/>
-</segment>
-<segment>
 <wire x1="320.04" y1="124.46" x2="317.5" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="317.5" y1="124.46" x2="317.5" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="GND24" gate="1" pin="GND"/>
@@ -4963,6 +4957,12 @@ as close as possible to the power transistors.</text>
 <pinref part="GND11" gate="G$1" pin="PGND"/>
 <wire x1="177.8" y1="223.52" x2="177.8" y2="226.06" width="0.1524" layer="91"/>
 <junction x="177.8" y="226.06"/>
+</segment>
+<segment>
+<wire x1="48.26" y1="233.68" x2="38.1" y2="233.68" width="0.1524" layer="91"/>
+<pinref part="PAD2" gate="G$1" pin="P$1"/>
+<pinref part="GND4" gate="G$1" pin="PGND"/>
+<wire x1="38.1" y1="231.14" x2="38.1" y2="233.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VDC" class="1">
