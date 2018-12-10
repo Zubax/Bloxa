@@ -2555,6 +2555,10 @@ DIN A3, landscape with location and doc. field</description>
 <rectangle x1="-1.35" y1="-1.5" x2="-0.55" y2="-0.7" layer="21"/>
 <rectangle x1="0.55" y1="-1.5" x2="1.35" y2="-0.7" layer="21"/>
 </package>
+<package name="CONNECTION" library_version="8" library_locally_modified="yes">
+<smd name="P$1" x="-0.35" y="0" dx="0.7" dy="0.7" layer="1" rot="R90" stop="no" thermals="no" cream="no"/>
+<smd name="P$2" x="0.35" y="0" dx="0.7" dy="0.7" layer="1" rot="R90" stop="no" thermals="no" cream="no"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="SENSE-0.6" urn="urn:adsk.eagle:package:7365871/1" type="box" library_version="8">
@@ -2593,6 +2597,10 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="7.62" y1="10.16" x2="0" y2="10.16" width="0.254" layer="94"/>
 <text x="3.81" y="10.414" size="1.778" layer="95" font="vector" ratio="15" align="bottom-center">&gt;NAME</text>
 <text x="3.81" y="-0.254" size="0.762" layer="95" font="vector" ratio="15" rot="R180" align="bottom-center">&gt;MANF#</text>
+</symbol>
+<symbol name="CONNECTION" library_version="8" library_locally_modified="yes">
+<pin name="P$1" x="-2.54" y="0" visible="off" length="short"/>
+<pin name="P$2" x="2.54" y="0" visible="off" length="short" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2654,6 +2662,24 @@ DIN A3, landscape with location and doc. field</description>
 <attribute name="DIGIKEY#" value="MCP9700T-E/LTCT-ND" constant="no"/>
 <attribute name="MANF" value="Microchip Technology" constant="no"/>
 <attribute name="MANF#" value="MCP9700T-E/LT" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CONNECTION" library_version="8" library_locally_modified="yes">
+<gates>
+<gate name="G$1" symbol="CONNECTION" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CONNECTION">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="BOM" value="EXCLUDE" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -3485,12 +3511,40 @@ http://www.bccomponents.com/</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="usb2can_master_lib">
+<packages>
+<package name="FIDUCIA-MOUNT">
+<circle x="0" y="0" radius="0.5" width="2.1844" layer="29"/>
+<circle x="0" y="0" radius="1.5" width="0.127" layer="41"/>
+<smd name="P$1" x="0" y="0" dx="1.016" dy="1.016" layer="1" roundness="100" cream="no"/>
+</package>
+</packages>
+<symbols>
+<symbol name="FIDUCIAL">
+<circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="FIDUCIALMOUNT">
+<gates>
+<gate name="G$1" symbol="FIDUCIAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="FIDUCIA-MOUNT">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
 <variantdefs>
 <variantdef name="Basic"/>
-<variantdef name="nocaps" current="yes"/>
+<variantdef name="nocaps"/>
 </variantdefs>
 <classes>
 <class number="0" name="default" width="0" drill="0">
@@ -3727,6 +3781,15 @@ http://www.bccomponents.com/</description>
 <part name="GND5" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="PGND" device="" value="PGND"/>
 <part name="GND6" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="PGND" device="" value="PGND"/>
 <part name="C1" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="0.1µF" device="-0402" package3d_urn="urn:adsk.eagle:package:2539379/2" technology="-16V_10%_X7R" value="0.1µF"/>
+<part name="U$1" library="misc" library_urn="urn:adsk.eagle:library:5347860" deviceset="CONNECTION" device=""/>
+<part name="GND7" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="GNDD" device="" value="GNDD"/>
+<part name="GND8" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="PGND" device="" value="PGND"/>
+<part name="U$8" library="usb2can_master_lib" deviceset="FIDUCIALMOUNT" device="">
+<variant name="Basic" populate="no"/>
+</part>
+<part name="U$9" library="usb2can_master_lib" deviceset="FIDUCIALMOUNT" device="">
+<variant name="Basic" populate="no"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -4233,6 +4296,15 @@ as close as possible to the power transistors.</text>
 <attribute name="PACKAGE" x="162.052" y="184.912" size="0.508" layer="97" rot="R90" align="center"/>
 <attribute name="VOLTAGE" x="162.814" y="180.594" size="0.762" layer="96" rot="R270" align="bottom-center"/>
 </instance>
+<instance part="U$1" gate="G$1" x="337.82" y="144.78" smashed="yes"/>
+<instance part="GND7" gate="G$1" x="342.9" y="139.7" smashed="yes">
+<attribute name="VALUE" x="342.9" y="137.668" size="1.27" layer="96" font="vector" ratio="15" align="center"/>
+</instance>
+<instance part="GND8" gate="G$1" x="332.74" y="139.7" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="332.74" y="138.43" size="1.27" layer="97" font="vector" ratio="15" rot="MR0" align="center"/>
+</instance>
+<instance part="U$8" gate="G$1" x="25.4" y="12.7" smashed="yes" rot="R270"/>
+<instance part="U$9" gate="G$1" x="15.24" y="22.86" smashed="yes" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -4744,6 +4816,12 @@ as close as possible to the power transistors.</text>
 <wire x1="345.44" y1="71.12" x2="345.44" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="GND19" gate="G$1" pin="GNDD"/>
 </segment>
+<segment>
+<pinref part="GND7" gate="G$1" pin="GNDD"/>
+<wire x1="342.9" y1="142.24" x2="342.9" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="P$2"/>
+<wire x1="342.9" y1="144.78" x2="340.36" y2="144.78" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="CAN1_VDD" class="0">
 <segment>
@@ -4917,6 +4995,12 @@ as close as possible to the power transistors.</text>
 <pinref part="C3" gate="G$1" pin="2"/>
 <wire x1="302.26" y1="71.12" x2="302.26" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="GND6" gate="G$1" pin="PGND"/>
+</segment>
+<segment>
+<pinref part="GND8" gate="G$1" pin="PGND"/>
+<wire x1="332.74" y1="142.24" x2="332.74" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="P$1"/>
+<wire x1="332.74" y1="144.78" x2="335.28" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VDC" class="1">
