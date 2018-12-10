@@ -2078,25 +2078,6 @@ DIN A3, landscape with location and doc. field</description>
 </library>
 <library name="myxa_masterlib" urn="urn:adsk.eagle:library:1040030">
 <packages>
-<package name="SOT23B-3" urn="urn:adsk.eagle:footprint:1040090/1" library_version="1">
-<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;</description>
-<wire x1="1.4" y1="0.5" x2="1.4" y2="-0.5" width="0.15" layer="51"/>
-<wire x1="1.4" y1="-0.5" x2="-1.4" y2="-0.5" width="0.15" layer="51"/>
-<wire x1="-1.4" y1="-0.5" x2="-1.4" y2="0.5" width="0.15" layer="51"/>
-<wire x1="-1.4" y1="0.5" x2="1.4" y2="0.5" width="0.15" layer="51"/>
-<wire x1="-1.4" y1="0.5" x2="-0.7" y2="0.5" width="0.15" layer="21"/>
-<wire x1="0.7" y1="0.5" x2="1.4" y2="0.5" width="0.15" layer="21"/>
-<wire x1="1.4" y1="0.5" x2="1.4" y2="-0.4" width="0.15" layer="21"/>
-<wire x1="0.25" y1="-0.5" x2="-0.25" y2="-0.5" width="0.15" layer="21"/>
-<wire x1="-1.4" y1="-0.4" x2="-1.4" y2="0.5" width="0.15" layer="21"/>
-<smd name="3" x="0" y="1.1" dx="1" dy="1" layer="1"/>
-<smd name="2" x="0.95" y="-1.1" dx="1" dy="1" layer="1"/>
-<smd name="1" x="-0.95" y="-1.1" dx="1" dy="1" layer="1"/>
-<text x="0" y="0" size="0.7" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
-<rectangle x1="-0.4" y1="0.7" x2="0.4" y2="1.5" layer="21"/>
-<rectangle x1="-1.35" y1="-1.5" x2="-0.55" y2="-0.7" layer="21"/>
-<rectangle x1="0.55" y1="-1.5" x2="1.35" y2="-0.7" layer="21"/>
-</package>
 <package name="SOT26" urn="urn:adsk.eagle:footprint:1040132/2" library_version="19">
 <smd name="2" x="-1.3" y="0" dx="1.2" dy="0.55" layer="1"/>
 <smd name="5" x="1.3" y="0" dx="1.2" dy="0.55" layer="1"/>
@@ -2170,12 +2151,6 @@ DIN A3, landscape with location and doc. field</description>
 </package>
 </packages>
 <packages3d>
-<package3d name="SOT23B-3" urn="urn:adsk.eagle:package:1040193/2" type="model" library_version="14" library_locally_modified="yes">
-<description>Small Outline Transistor</description>
-<packageinstances>
-<packageinstance name="SOT23B-3"/>
-</packageinstances>
-</package3d>
 <package3d name="SOT26" urn="urn:adsk.eagle:package:1040217/3" type="model" library_version="19">
 <packageinstances>
 <packageinstance name="SOT26"/>
@@ -2203,17 +2178,6 @@ DIN A3, landscape with location and doc. field</description>
 </package3d>
 </packages3d>
 <symbols>
-<symbol name="MCP9700" urn="urn:adsk.eagle:symbol:1040099/2" library_version="15" library_locally_modified="yes">
-<pin name="VCC" x="-2.54" y="7.62" length="short"/>
-<pin name="OUT" x="-2.54" y="5.08" length="short"/>
-<pin name="GND" x="-2.54" y="2.54" length="short"/>
-<wire x1="0" y1="10.16" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="7.62" y2="0" width="0.254" layer="94"/>
-<wire x1="7.62" y1="0" x2="7.62" y2="10.16" width="0.254" layer="94"/>
-<wire x1="7.62" y1="10.16" x2="0" y2="10.16" width="0.254" layer="94"/>
-<text x="3.81" y="10.414" size="1.778" layer="95" font="vector" ratio="15" align="bottom-center">&gt;NAME</text>
-<text x="3.81" y="-0.254" size="0.762" layer="95" font="vector" ratio="15" rot="R180" align="bottom-center">&gt;MANF#</text>
-</symbol>
 <symbol name="TPD3S014DBVR" urn="urn:adsk.eagle:symbol:1040131/1" library_version="1">
 <pin name="EN" x="-2.54" y="12.7" length="short"/>
 <pin name="GND" x="-2.54" y="7.62" length="short"/>
@@ -2288,31 +2252,6 @@ DIN A3, landscape with location and doc. field</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="MCP9700" urn="urn:adsk.eagle:component:1040233/7" prefix="IC" library_version="15" library_locally_modified="yes">
-<description>SENSOR TEMP ANLG VOLT SOT-23-3</description>
-<gates>
-<gate name="G$1" symbol="MCP9700" x="-5.08" y="-2.54"/>
-</gates>
-<devices>
-<device name="" package="SOT23B-3">
-<connects>
-<connect gate="G$1" pin="GND" pad="3"/>
-<connect gate="G$1" pin="OUT" pad="2"/>
-<connect gate="G$1" pin="VCC" pad="1"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:1040193/2"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="DIGIKEY#" value="MCP9700T-E/TTTR-ND" constant="no"/>
-<attribute name="MANF" value="Microchip Technology" constant="no"/>
-<attribute name="MANF#" value="MCP9700T-E/TT" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="TPD3S014DBVR" urn="urn:adsk.eagle:component:1040262/7" prefix="IC" library_version="19">
 <gates>
 <gate name="G$1" symbol="TPD3S014DBVR" x="-2.54" y="2.54"/>
@@ -2668,13 +2607,63 @@ DIN A3, landscape with location and doc. field</description>
 </library>
 <library name="misc" urn="urn:adsk.eagle:library:5347860">
 <packages>
-<package name="SENSE-0.6" library_version="6" library_locally_modified="yes">
+<package name="SENSE-0.6" urn="urn:adsk.eagle:footprint:7365866/1" library_version="8">
 <smd name="IN" x="0" y="0" dx="0.1" dy="0.1" layer="1" roundness="100" stop="no" thermals="no" cream="no"/>
 <pad name="SHELL" x="0" y="0" drill="0.3" diameter="0.6" stop="no" thermals="no"/>
 </package>
+<package name="SC70-5" urn="urn:adsk.eagle:footprint:7365865/2" library_version="8">
+<smd name="4" x="1" y="-0.65" dx="0.45" dy="0.75" layer="1" rot="R90"/>
+<smd name="2" x="-1" y="0" dx="0.45" dy="0.75" layer="1" rot="R90"/>
+<smd name="1" x="-1" y="0.65" dx="0.45" dy="0.75" layer="1" rot="R90"/>
+<smd name="3" x="-1" y="-0.65" dx="0.45" dy="0.75" layer="1" rot="R90"/>
+<smd name="5" x="1" y="0.65" dx="0.45" dy="0.75" layer="1" rot="R90"/>
+<text x="0" y="0" size="0.5" layer="25" font="vector" ratio="15" rot="R90" align="center">&gt;NAME</text>
+<wire x1="0.45" y1="-1" x2="0.45" y2="1" width="0.15" layer="21"/>
+<wire x1="0.45" y1="1" x2="-0.45" y2="1" width="0.15" layer="21"/>
+<wire x1="-0.45" y1="1" x2="-0.45" y2="-1" width="0.15" layer="21"/>
+<wire x1="-0.45" y1="-1" x2="0.45" y2="-1" width="0.15" layer="21"/>
+<circle x="-0.6" y="1.2" radius="0.1" width="0.1" layer="21"/>
+</package>
+<package name="SOT23B-3" urn="urn:adsk.eagle:footprint:1040090/1" library_version="8">
+<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;</description>
+<wire x1="1.4" y1="0.5" x2="1.4" y2="-0.5" width="0.15" layer="51"/>
+<wire x1="1.4" y1="-0.5" x2="-1.4" y2="-0.5" width="0.15" layer="51"/>
+<wire x1="-1.4" y1="-0.5" x2="-1.4" y2="0.5" width="0.15" layer="51"/>
+<wire x1="-1.4" y1="0.5" x2="1.4" y2="0.5" width="0.15" layer="51"/>
+<wire x1="-1.4" y1="0.5" x2="-0.7" y2="0.5" width="0.15" layer="21"/>
+<wire x1="0.7" y1="0.5" x2="1.4" y2="0.5" width="0.15" layer="21"/>
+<wire x1="1.4" y1="0.5" x2="1.4" y2="-0.4" width="0.15" layer="21"/>
+<wire x1="0.25" y1="-0.5" x2="-0.25" y2="-0.5" width="0.15" layer="21"/>
+<wire x1="-1.4" y1="-0.4" x2="-1.4" y2="0.5" width="0.15" layer="21"/>
+<smd name="3" x="0" y="1.1" dx="1" dy="1" layer="1"/>
+<smd name="2" x="0.95" y="-1.1" dx="1" dy="1" layer="1"/>
+<smd name="1" x="-0.95" y="-1.1" dx="1" dy="1" layer="1"/>
+<text x="0" y="0" size="0.7" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<rectangle x1="-0.4" y1="0.7" x2="0.4" y2="1.5" layer="21"/>
+<rectangle x1="-1.35" y1="-1.5" x2="-0.55" y2="-0.7" layer="21"/>
+<rectangle x1="0.55" y1="-1.5" x2="1.35" y2="-0.7" layer="21"/>
+</package>
 </packages>
+<packages3d>
+<package3d name="SENSE-0.6" urn="urn:adsk.eagle:package:7365871/1" type="box" library_version="8">
+<packageinstances>
+<packageinstance name="SENSE-0.6"/>
+</packageinstances>
+</package3d>
+<package3d name="SC70-5" urn="urn:adsk.eagle:package:7365869/3" type="model" library_version="8">
+<packageinstances>
+<packageinstance name="SC70-5"/>
+</packageinstances>
+</package3d>
+<package3d name="SOT23B-3" urn="urn:adsk.eagle:package:1040193/2" type="model" library_version="8">
+<description>Small Outline Transistor</description>
+<packageinstances>
+<packageinstance name="SOT23B-3"/>
+</packageinstances>
+</package3d>
+</packages3d>
 <symbols>
-<symbol name="MACARONI_MASTERLIB_SENSE" library_version="6" library_locally_modified="yes">
+<symbol name="MACARONI_MASTERLIB_SENSE" urn="urn:adsk.eagle:symbol:7365868/1" library_version="8">
 <wire x1="0" y1="5.08" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="2.54" x2="-0.508" y2="0.508" width="0.254" layer="94"/>
 <wire x1="0" y1="5.08" x2="2.54" y2="2.54" width="0.254" layer="94"/>
@@ -2682,9 +2671,20 @@ DIN A3, landscape with location and doc. field</description>
 <pin name="IN" x="0" y="-2.54" visible="off" length="middle" rot="R90"/>
 <pin name="SHELLL" x="-5.08" y="2.54" visible="off" length="short"/>
 </symbol>
+<symbol name="MCP9700" urn="urn:adsk.eagle:symbol:7365867/1" library_version="8">
+<pin name="VCC" x="-2.54" y="7.62" length="short"/>
+<pin name="OUT" x="-2.54" y="5.08" length="short"/>
+<pin name="GND" x="-2.54" y="2.54" length="short"/>
+<wire x1="0" y1="10.16" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="7.62" y1="0" x2="7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="0" y2="10.16" width="0.254" layer="94"/>
+<text x="3.81" y="10.414" size="1.778" layer="95" font="vector" ratio="15" align="bottom-center">&gt;NAME</text>
+<text x="3.81" y="-0.254" size="0.762" layer="95" font="vector" ratio="15" rot="R180" align="bottom-center">&gt;MANF#</text>
+</symbol>
 </symbols>
 <devicesets>
-<deviceset name="SENSE" prefix="S" library_version="6" library_locally_modified="yes">
+<deviceset name="SENSE" urn="urn:adsk.eagle:component:7365873/1" prefix="S" library_version="8">
 <gates>
 <gate name="G$1" symbol="MACARONI_MASTERLIB_SENSE" x="-5.08" y="10.16"/>
 </gates>
@@ -2694,9 +2694,54 @@ DIN A3, landscape with location and doc. field</description>
 <connect gate="G$1" pin="IN" pad="IN"/>
 <connect gate="G$1" pin="SHELLL" pad="SHELL"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:7365871/1"/>
+</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="BOM" value="EXCLUDE" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MCP9700" urn="urn:adsk.eagle:component:7365872/2" prefix="IC" library_version="8">
+<description>Temperature Sensor Analog, Local -40°C ~ 125°C 10mV/°C</description>
+<gates>
+<gate name="G$1" symbol="MCP9700" x="-5.08" y="-2.54"/>
+</gates>
+<devices>
+<device name="-SOT23" package="SOT23B-3">
+<connects>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="OUT" pad="2"/>
+<connect gate="G$1" pin="VCC" pad="1"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:1040193/2"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY#" value="MCP9700T-E/TTTR-ND" constant="no"/>
+<attribute name="MANF" value="Microchip Technology" constant="no"/>
+<attribute name="MANF#" value="MCP9700T-E/TT" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-SC70-5" package="SC70-5">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
+<connect gate="G$1" pin="VCC" pad="4"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:7365869/3"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY#" value="MCP9700T-E/LTCT-ND" constant="no"/>
+<attribute name="MANF" value="Microchip Technology" constant="no"/>
+<attribute name="MANF#" value="MCP9700T-E/LT" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -3533,7 +3578,7 @@ http://www.bccomponents.com/</description>
 </attributes>
 <variantdefs>
 <variantdef name="Basic"/>
-<variantdef name="nocaps"/>
+<variantdef name="nocaps" current="yes"/>
 </variantdefs>
 <classes>
 <class number="0" name="default" width="0" drill="0">
@@ -3705,7 +3750,7 @@ http://www.bccomponents.com/</description>
 <variant name="Basic" populate="no"/>
 </part>
 <part name="R26" library="SHUNT_RESISTORS" library_urn="urn:adsk.eagle:library:2644450" deviceset="CURRENT_SHUNT_KELVIN" device="-2512-KELVIN" package3d_urn="urn:adsk.eagle:package:3560627/3" technology="-0.003R" value="3 mOhms"/>
-<part name="IC6" library="myxa_masterlib" library_urn="urn:adsk.eagle:library:1040030" deviceset="MCP9700" device="" package3d_urn="urn:adsk.eagle:package:1040193/2"/>
+<part name="IC6" library="misc" library_urn="urn:adsk.eagle:library:5347860" deviceset="MCP9700" device="-SC70-5" package3d_urn="urn:adsk.eagle:package:7365869/3"/>
 <part name="R30" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" deviceset="200R" device="-0402" package3d_urn="urn:adsk.eagle:package:2539512/2" technology="-1%" value="200R"/>
 <part name="C15" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="0.1µF" device="-0402" package3d_urn="urn:adsk.eagle:package:2539379/2" technology="-16V_10%_X7R" value="0.1µF"/>
 <part name="R31" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" deviceset="4R3" device="-0402" package3d_urn="urn:adsk.eagle:package:2539512/2" technology="-5%" value="4R3"/>
@@ -3721,7 +3766,7 @@ http://www.bccomponents.com/</description>
 </part>
 <part name="R36" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" deviceset="4R3" device="-0402" package3d_urn="urn:adsk.eagle:package:2539512/2" technology="-5%" value="4R3"/>
 <part name="R37" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" deviceset="4R3" device="-0402" package3d_urn="urn:adsk.eagle:package:2539512/2" technology="-5%" value="4R3"/>
-<part name="S2" library="misc" library_urn="urn:adsk.eagle:library:5347860" deviceset="SENSE" device="">
+<part name="S2" library="misc" library_urn="urn:adsk.eagle:library:5347860" deviceset="SENSE" device="" package3d_urn="urn:adsk.eagle:package:7365871/1">
 <variant name="Basic" populate="no"/>
 </part>
 <part name="C16" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="10µF" device="-C1210" package3d_urn="urn:adsk.eagle:package:2539380/2" technology="-50_10%_X7S" value="10µF"/>
@@ -3749,7 +3794,6 @@ http://www.bccomponents.com/</description>
 <variant name="Basic" populate="no"/>
 </part>
 <part name="GND10" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="PGND" device="" value="PGND"/>
-<part name="D1" library="TVS_diodes" library_urn="urn:adsk.eagle:library:3333632" deviceset="PTVS36VP1UP,115" device="-SOD128" package3d_urn="urn:adsk.eagle:package:6533206/2" technology="-36V"/>
 <part name="D2" library="TVS_diodes" library_urn="urn:adsk.eagle:library:3333632" deviceset="PTVS36VP1UP,115" device="-SOD128" package3d_urn="urn:adsk.eagle:package:6533206/2" technology="-36V"/>
 <part name="C100" library="rc" library_urn="urn:adsk.eagle:library:2539423" deviceset="CPOL" device="-RADIAL_SIDE-8X21.5" package3d_urn="urn:adsk.eagle:package:7189333/2" value="180µF">
 <variant name="Basic" populate="no"/>
@@ -4243,10 +4287,6 @@ as close as possible to the power transistors.</text>
 </instance>
 <instance part="GND10" gate="G$1" x="119.38" y="218.44" smashed="yes">
 <attribute name="VALUE" x="119.38" y="217.17" size="1.27" layer="97" font="vector" ratio="15" align="center"/>
-</instance>
-<instance part="D1" gate="G$1" x="119.38" y="228.6" smashed="yes" rot="R90">
-<attribute name="NAME" x="116.84" y="228.6" size="1.27" layer="95" font="vector" ratio="15" rot="R90" align="center"/>
-<attribute name="MANF#" x="121.92" y="228.6" size="1.016" layer="95" font="vector" ratio="15" rot="R90" align="center"/>
 </instance>
 <instance part="D2" gate="G$1" x="127" y="228.6" smashed="yes" rot="R90">
 <attribute name="NAME" x="124.46" y="228.6" size="1.27" layer="95" font="vector" ratio="15" rot="R90" align="center"/>
@@ -4920,8 +4960,6 @@ as close as possible to the power transistors.</text>
 <pinref part="GND10" gate="G$1" pin="PGND"/>
 <wire x1="119.38" y1="220.98" x2="119.38" y2="223.52" width="0.1524" layer="91"/>
 <junction x="119.38" y="223.52"/>
-<pinref part="D1" gate="G$1" pin="A"/>
-<wire x1="119.38" y1="226.06" x2="119.38" y2="223.52" width="0.1524" layer="91"/>
 <junction x="119.38" y="223.52"/>
 <wire x1="119.38" y1="223.52" x2="127" y2="223.52" width="0.1524" layer="91"/>
 <wire x1="127" y1="223.52" x2="127" y2="226.06" width="0.1524" layer="91"/>
@@ -5017,10 +5055,8 @@ as close as possible to the power transistors.</text>
 </segment>
 <segment>
 <pinref part="D2" gate="G$1" pin="C"/>
-<pinref part="D1" gate="G$1" pin="C"/>
 <wire x1="116.84" y1="233.68" x2="119.38" y2="233.68" width="0.1524" layer="91"/>
 <junction x="119.38" y="233.68"/>
-<wire x1="119.38" y1="233.68" x2="119.38" y2="231.14" width="0.1524" layer="91"/>
 <junction x="119.38" y="233.68"/>
 <wire x1="119.38" y1="233.68" x2="127" y2="233.68" width="0.1524" layer="91"/>
 <wire x1="127" y1="233.68" x2="127" y2="231.14" width="0.1524" layer="91"/>
