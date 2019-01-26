@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="9.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.025" unitdist="mm" unit="mm" style="lines" multiple="2" display="yes" altdistance="0.25" altunitdist="mm" altunit="mm"/>
+<grid distance="0.025" unitdist="mm" unit="mm" style="lines" multiple="2" display="no" altdistance="0.25" altunitdist="mm" altunit="mm"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="pwr" color="1" fill="3" visible="no" active="yes"/>
 <layer number="3" name="power" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="route2" color="1" fill="4" visible="no" active="no"/>
@@ -23,17 +23,17 @@
 <layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
-<layer number="15" name="gnd" color="4" fill="6" visible="yes" active="yes"/>
+<layer number="15" name="gnd" color="4" fill="6" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="9" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
@@ -59,7 +59,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -9904,14 +9904,14 @@
 <attribute name="TOLERANCE" value="1%" x="210.475" y="-65.975" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="7.575" y="-6.975" size="0.5" layer="27" font="vector" ratio="15" rot="R90" align="center"/>
 </element>
-<element name="R7" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" package="R0402" package3d_urn="urn:adsk.eagle:package:2539512/2" value="1K" x="11.225" y="-4.7" smashed="yes" rot="R90">
-<attribute name="DIGIKEY#" value="311-1.00KLRCT-ND" x="213.225" y="-6.7" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANF" value="Yageo" x="213.225" y="-6.7" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANF#" value="RC0402FR-071KL" x="213.225" y="-6.7" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="11.225" y="-4.7" size="0.5" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
-<attribute name="PACKAGE" value="0402" x="213.225" y="-6.7" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="TOLERANCE" value="1%" x="213.225" y="-6.7" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="10.325" y="-4.7" size="0.5" layer="27" font="vector" ratio="15" rot="R90" align="center"/>
+<element name="R7" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" package="R0402" package3d_urn="urn:adsk.eagle:package:2539512/2" value="1K" x="8.8" y="-5.325" smashed="yes">
+<attribute name="DIGIKEY#" value="311-1.00KLRCT-ND" x="6.799996875" y="-207.32499375" size="1.778" layer="27" display="off"/>
+<attribute name="MANF" value="Yageo" x="6.799996875" y="-207.32499375" size="1.778" layer="27" display="off"/>
+<attribute name="MANF#" value="RC0402FR-071KL" x="6.799996875" y="-207.32499375" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="8.8" y="-5.325" size="0.5" layer="25" font="vector" ratio="15" align="center"/>
+<attribute name="PACKAGE" value="0402" x="6.799996875" y="-207.32499375" size="1.778" layer="27" display="off"/>
+<attribute name="TOLERANCE" value="1%" x="6.799996875" y="-207.32499375" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="8.8" y="-4.424996875" size="0.5" layer="27" font="vector" ratio="15" align="center"/>
 </element>
 <element name="R3" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" package="R0402" package3d_urn="urn:adsk.eagle:package:2539512/2" value="1K" x="-10.45" y="-12.15" smashed="yes" rot="R180">
 <attribute name="DIGIKEY#" value="311-1.00KLRCT-ND" x="39.55" y="195.85" size="1.778" layer="27" rot="R180" display="off"/>
@@ -10172,6 +10172,15 @@
 <attribute name="MANF" value="Lite-On Inc" x="0.5" y="-13.3" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="MANF#" value="LTST-C19HE1WT" x="0.5" y="-13.3" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="NAME" x="0.5" y="-15.05" size="0.6" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
+</element>
+<element name="R14" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" package="R0402" package3d_urn="urn:adsk.eagle:package:2539512/2" value="1K" x="10.825" y="-5.325" smashed="yes">
+<attribute name="DIGIKEY#" value="311-1.00KLRCT-ND" x="10.825" y="-5.325" size="1.778" layer="27" display="off"/>
+<attribute name="MANF" value="Yageo" x="10.825" y="-5.325" size="1.778" layer="27" display="off"/>
+<attribute name="MANF#" value="RC0402FR-071KL" x="10.825" y="-5.325" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="10.825" y="-5.325" size="0.5" layer="25" font="vector" ratio="15" align="center"/>
+<attribute name="PACKAGE" value="0402" x="10.825" y="-5.325" size="1.778" layer="27" display="off"/>
+<attribute name="TOLERANCE" value="1%" x="10.825" y="-5.325" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="10.825" y="-4.425" size="0.5" layer="27" font="vector" ratio="15" align="center"/>
 </element>
 </elements>
 <signals>
@@ -10501,21 +10510,25 @@
 <signal name="RGB_LED_R">
 <contactref element="PAD12" pad="P$1"/>
 <contactref element="R7" pad="2"/>
-<wire x1="12.45" y1="-3" x2="11.975" y2="-3" width="0.15" layer="1"/>
-<wire x1="11.975" y1="-3" x2="11.225" y2="-3.75" width="0.15" layer="1"/>
-<wire x1="11.225" y1="-4.2" x2="11.225" y2="-3.75" width="0.15" layer="1"/>
+<wire x1="12.45" y1="-3" x2="12.2" y2="-3" width="0.15" layer="1"/>
+<wire x1="12.2" y1="-3" x2="12.07" y2="-3" width="0.15" layer="1"/>
+<wire x1="12.07" y1="-3" x2="11.975" y2="-3" width="0.15" layer="1"/>
+<wire x1="9.3" y1="-5.325" x2="9.9" y2="-4.725" width="0.15" layer="1"/>
+<wire x1="9.9" y1="-4.725" x2="10.2485375" y2="-4.725" width="0.15" layer="1"/>
+<wire x1="11.9735375" y1="-3" x2="12.07" y2="-3" width="0.15" layer="1"/>
+<wire x1="10.2485375" y1="-4.725" x2="11.9735375" y2="-3" width="0.15" layer="1"/>
 </signal>
 <signal name="RGB_LED_G">
 <contactref element="PAD11" pad="P$1"/>
 <contactref element="R6" pad="2"/>
-<wire x1="9.275" y1="-6.3" x2="8.65" y2="-6.3" width="0.15" layer="1"/>
-<wire x1="8.475" y1="-6.475" x2="8.65" y2="-6.3" width="0.15" layer="1"/>
-<wire x1="10.65" y1="-4.1" x2="10.65" y2="-4.925" width="0.15" layer="1"/>
-<wire x1="10.65" y1="-4.925" x2="9.275" y2="-6.3" width="0.15" layer="1"/>
-<wire x1="12.45" y1="-1" x2="11.775" y2="-1.675" width="0.15" layer="1"/>
-<wire x1="11.775" y1="-1.675" x2="11.775" y2="-2.775" width="0.15" layer="1"/>
-<wire x1="11.775" y1="-2.775" x2="10.65" y2="-3.9" width="0.15" layer="1"/>
-<wire x1="10.65" y1="-3.9" x2="10.65" y2="-4.1" width="0.15" layer="1"/>
+<wire x1="12.45" y1="-1" x2="11.525" y2="-1.925" width="0.15" layer="1"/>
+<wire x1="11.525" y1="-3.02426875" x2="10.12426875" y2="-4.425" width="0.15" layer="1"/>
+<wire x1="10.12426875" y1="-4.425" x2="8.09926875" y2="-4.425" width="0.15" layer="1"/>
+<wire x1="11.525" y1="-1.925" x2="11.525" y2="-3.02426875" width="0.15" layer="1"/>
+<wire x1="8.09926875" y1="-4.425" x2="7.725" y2="-4.79926875" width="0.15" layer="1"/>
+<wire x1="8.4" y1="-6.475" x2="8.475" y2="-6.475" width="0.15" layer="1"/>
+<wire x1="7.725" y1="-4.79926875" x2="7.725" y2="-5.8" width="0.15" layer="1"/>
+<wire x1="7.725" y1="-5.8" x2="8.4" y2="-6.475" width="0.15" layer="1"/>
 </signal>
 <signal name="RGB_LED_B">
 <contactref element="PAD10" pad="P$1"/>
@@ -10523,14 +10536,13 @@
 <wire x1="11.775" y1="0.3" x2="11.775" y2="-1.175" width="0.15" layer="1"/>
 <wire x1="12.45" y1="1" x2="12.45" y2="0.975" width="0.15" layer="1"/>
 <wire x1="12.45" y1="0.975" x2="11.775" y2="0.3" width="0.15" layer="1"/>
-<wire x1="11.775" y1="-1.175" x2="11.45" y2="-1.5" width="0.15" layer="1"/>
-<wire x1="10.3" y1="-4.775" x2="9.1" y2="-5.975" width="0.15" layer="1"/>
-<wire x1="9.1" y1="-5.975" x2="7.95" y2="-5.975" width="0.15" layer="1"/>
-<wire x1="7.95" y1="-5.975" x2="7.45" y2="-6.475" width="0.15" layer="1"/>
+<wire x1="11.775" y1="-1.175" x2="11.225" y2="-1.725" width="0.15" layer="1"/>
 <wire x1="7.45" y1="-6.475" x2="7.4" y2="-6.475" width="0.15" layer="1"/>
-<wire x1="11.45" y1="-1.5" x2="11.45" y2="-2.675" width="0.15" layer="1"/>
-<wire x1="11.45" y1="-2.675" x2="10.3" y2="-3.825" width="0.15" layer="1"/>
-<wire x1="10.3" y1="-3.825" x2="10.3" y2="-4.775" width="0.15" layer="1"/>
+<wire x1="11.225" y1="-1.725" x2="11.225" y2="-2.9" width="0.15" layer="1"/>
+<wire x1="11.225" y1="-2.9" x2="10" y2="-4.125" width="0.15" layer="1"/>
+<wire x1="7.4" y1="-4.7" x2="7.4" y2="-6.475" width="0.15" layer="1"/>
+<wire x1="10" y1="-4.125" x2="7.975" y2="-4.125" width="0.15" layer="1"/>
+<wire x1="7.975" y1="-4.125" x2="7.4" y2="-4.7" width="0.15" layer="1"/>
 </signal>
 <signal name="GPIO1">
 <contactref element="PAD14" pad="P$1"/>
@@ -10692,6 +10704,10 @@
 </signal>
 <signal name="OVERCURRENT_PROTECT_ADJ">
 <contactref element="PAD13" pad="P$1"/>
+<contactref element="R14" pad="2"/>
+<wire x1="12.45" y1="-5" x2="12.175" y2="-5.275" width="0.3" layer="1"/>
+<wire x1="11.375" y1="-5.275" x2="11.325" y2="-5.325" width="0.3" layer="1"/>
+<wire x1="12.175" y1="-5.275" x2="11.375" y2="-5.275" width="0.3" layer="1"/>
 </signal>
 <signal name="USB+">
 <contactref element="PAD7" pad="P$1"/>
@@ -10917,6 +10933,9 @@
 <via x="-10.625" y="-8.25" extent="1-16" drill="0.3" diameter="0.6"/>
 <wire x1="-10.975" y1="-9.1" x2="-10.625" y2="-8.75" width="0.15" layer="1"/>
 <wire x1="-10.625" y1="-8.75" x2="-10.625" y2="-8.25" width="0.15" layer="1"/>
+<contactref element="R14" pad="1"/>
+<wire x1="10.325" y1="-5.325" x2="10.325" y2="-7.23" width="0.3" layer="1"/>
+<wire x1="10.325" y1="-7.23" x2="10.425" y2="-7.33" width="0.3" layer="1"/>
 </signal>
 <signal name="VDC" class="1">
 <contactref element="C9" pad="2"/>
@@ -11145,16 +11164,12 @@
 <wire x1="10.825" y1="-11.85073125" x2="10.825" y2="-12.025" width="0.15" layer="1"/>
 <wire x1="10.77426875" y1="-11.8" x2="9.05" y2="-10.07573125" width="0.15" layer="1"/>
 <wire x1="10.77426875" y1="-11.8" x2="10.825" y2="-11.85073125" width="0.15" layer="1"/>
-<wire x1="11.225" y1="-5.2" x2="11.05" y2="-5.375" width="0.15" layer="1"/>
-<wire x1="11.05" y1="-5.375" x2="10.75" y2="-5.375" width="0.15" layer="1"/>
-<wire x1="10.75" y1="-5.375" x2="9.05" y2="-7.075" width="0.15" layer="1"/>
 <contactref element="LED3" pad="R"/>
 <wire x1="0.075" y1="-14.025" x2="0.3" y2="-13.8" width="0.2" layer="16"/>
 <wire x1="0.3" y1="-13.425" x2="0.425" y2="-13.3" width="0.2" layer="16"/>
 <wire x1="0.3" y1="-13.8" x2="0.3" y2="-13.425" width="0.2" layer="16"/>
 <wire x1="0.425" y1="-13.3" x2="1.794975" y2="-13.3" width="0.2" layer="16"/>
-<wire x1="9.05" y1="-7.075" x2="9.05" y2="-8.475" width="0.15" layer="1"/>
-<wire x1="9.05" y1="-8.475" x2="8.975" y2="-8.55" width="0.15" layer="1"/>
+<wire x1="8.975" y1="-8.55" x2="9.05" y2="-8.475" width="0.15" layer="1"/>
 <via x="8.975" y="-8.55" extent="1-16" drill="0.3" diameter="0.6"/>
 <wire x1="9.05" y1="-8.625" x2="8.975" y2="-8.55" width="0.15" layer="1"/>
 <wire x1="9.05" y1="-8.625" x2="9.05" y2="-10.07573125" width="0.15" layer="1"/>
@@ -11162,6 +11177,9 @@
 <wire x1="6.294975" y1="-8.8" x2="8.12781875" y2="-8.8" width="0.2" layer="16"/>
 <wire x1="8.12781875" y1="-8.8" x2="8.37781875" y2="-8.55" width="0.2" layer="16"/>
 <wire x1="1.794975" y1="-13.3" x2="6.294975" y2="-8.8" width="0.2" layer="16"/>
+<wire x1="9.05" y1="-8.475" x2="9.05" y2="-6.175" width="0.15" layer="1"/>
+<wire x1="9.05" y1="-6.175" x2="8.3" y2="-5.425" width="0.15" layer="1"/>
+<wire x1="8.3" y1="-5.325" x2="8.3" y2="-5.425" width="0.15" layer="1"/>
 </signal>
 <signal name="N$60">
 <contactref element="LED4" pad="B"/>

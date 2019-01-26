@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="9.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -3820,6 +3820,8 @@ http://www.bccomponents.com/</description>
 <part name="LED3" library="myxa_masterlib" library_urn="urn:adsk.eagle:library:1040030" deviceset="LTST-C19HE1WT" device="" package3d_urn="urn:adsk.eagle:package:1040199/2">
 <variant name="Basic" populate="no"/>
 </part>
+<part name="R14" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" deviceset="1K" device="-0402" package3d_urn="urn:adsk.eagle:package:2539512/2" technology="-1%" value="1K"/>
+<part name="GND25" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="GND" device="" value="GND"/>
 </parts>
 <sheets>
 <sheet>
@@ -4349,6 +4351,15 @@ as close as possible to the power transistors.</text>
 <instance part="LED3" gate="G$1" x="241.3" y="121.92" smashed="yes" rot="R270">
 <attribute name="NAME" x="257.556" y="116.84" size="1.27" layer="95" font="vector" ratio="15" rot="R270" align="center"/>
 </instance>
+<instance part="R14" gate="G$1" x="33.02" y="116.84" smashed="yes" rot="MR180">
+<attribute name="NAME" x="33.02" y="116.84" size="1.27" layer="95" rot="MR180" align="center"/>
+<attribute name="VALUE" x="32.766" y="118.872" size="0.762" layer="96" rot="MR180" align="bottom-right"/>
+<attribute name="PACKAGE" x="29.21" y="116.332" size="0.508" layer="95" rot="MR180" align="center"/>
+<attribute name="TOLERANCE" x="33.274" y="118.872" size="0.762" layer="96" rot="MR180"/>
+</instance>
+<instance part="GND25" gate="1" x="22.86" y="111.76" smashed="yes">
+<attribute name="VALUE" x="22.86" y="110.49" size="1.27" layer="96" font="vector" ratio="15" align="center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -4706,8 +4717,9 @@ as close as possible to the power transistors.</text>
 <net name="OVERCURRENT_PROTECT_ADJ" class="0">
 <segment>
 <wire x1="45.72" y1="116.84" x2="43.18" y2="116.84" width="0.1524" layer="91"/>
-<label x="43.18" y="116.84" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="PAD13" gate="G$1" pin="P$1"/>
+<wire x1="43.18" y1="116.84" x2="38.1" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="R14" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="USB+" class="0">
@@ -4871,6 +4883,12 @@ as close as possible to the power transistors.</text>
 <wire x1="162.56" y1="180.34" x2="162.56" y2="177.8" width="0.1524" layer="91"/>
 <pinref part="GND6" gate="1" pin="GND"/>
 <wire x1="162.56" y1="175.26" x2="162.56" y2="177.8" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="22.86" y1="114.3" x2="22.86" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="116.84" x2="27.94" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="R14" gate="G$1" pin="1"/>
+<pinref part="GND25" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="GNDD" class="0">
