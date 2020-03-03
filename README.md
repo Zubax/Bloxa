@@ -2,16 +2,16 @@
 
 ## Overview
 
-Zubax Bloxa is the most compact ESC design that is possible using Mitochondrik module(at least it seems to be it). The main design requirements for BLOXA are
+Zubax Bloxa is the most compact ESC design that is possible using Mitochondrik module(at least it seems to be it). The main design requirements for BLOXA are:
 
 * Small size
 * Low mass
 * Low COG
 * [UAVCAN hardware recommendations](https://uavcan.org/Specification/8._Hardware_design_recommendations/) following
 
-<img src="pics/bloxa_top.png" alt="Bloxa top" style="zoom:80%;" />
+<img src="pics/bloxa_top.png" alt="Bloxa top" style="width:100%;" />
 
-<img src="pics/bloxa_bottom.png" alt="Bloxa bottom" style="zoom:80%;" />
+<img src="pics/bloxa_bottom.png" alt="Bloxa bottom" style="width :100%;" />
 
 ## Brief specs
 
@@ -29,14 +29,15 @@ Zubax Bloxa is the most compact ESC design that is possible using Mitochondrik m
 
   The main advantage of BLOXA is its miniature size. To achieve it, a novel Mitochondrik mounting technique was used.
 
-  <img src="pics/construction.png" style="zoom:50%;" />
+  <img src="pics\construction.png" style="width:60%;" />
 
- 
+  
+
   Mitochondrik is mounted on the power stage PCB using intermediary 2mm thick PCB that basically serves as a connector. Soldering is done using edge connectors on the Mitochondrik, the intermediary  PCB and the power stage PCB in the plane perpendicular to the PCB planes.  Also, one of the RF shields on the Mitochondrik had to be removed. 
   
   Of course, this mounting technique seems questionable from the vibration resistance point of view, but it allows for the smallest PCB design possible. Bloxa has no strict reliability requirements, so this technique is acceptable. 
   
-  <img src="pics/bloxa_drawing.png" alt="drawing" style="zoom: 70%;" />
+  <img src="pics/bloxa_drawing.png" alt="drawing" style="width: 60%;" />
 ## Power stage details.
 
   Bloxa power stage uses three [BUK9K6R2-40E](https://www.digikey.com/products/en?keywords=1727-7274-1-ND) MOSFET arrays. 
@@ -50,7 +51,7 @@ Zubax Bloxa is the most compact ESC design that is possible using Mitochondrik m
 
   Current shunt value is 5 mOhm
 
-  Bulk capacitor bank is formed with 3 [180µF  aluminum electrolytic capacitors](https://www.digikey.com/products/en?keywords=565-4066-ND) from [ United Chemi-Con](https://www.digikey.com/en/supplier-centers/u/united-chemi-con).
+  Bulk capacitor bank is formed with 3 [180µF  aluminum electrolytic capacitors](https://www.digikey.com/products/en?keywords=565-4066-ND).
 
   Overcurrent protection trip value is set to ~47A using 1K resistor on OC_adj pin (R14). 
 
