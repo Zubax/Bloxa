@@ -9,34 +9,31 @@ Zubax Bloxa is the most compact ESC design that is possible using Mitochondrik m
 * Low COG
 * [UAVCAN hardware recommendations](https://uavcan.org/Specification/8._Hardware_design_recommendations/) following
 
+<p align="center">
 <img src="pics/bloxa_top.png" alt="Bloxa top"  width = "80%" />
 
+<p align="center">
 <img src="pics/bloxa_bottom.png" alt="Bloxa bottom"  width = "80%" />
 
 ## Brief specs
 
 * Operating voltage range 4-8S Li-Po (LiCoO<sub>2</sub>) battery (15-34 V)
-
 * Continuous power 200W
-
 * 1 UAVCAN interface
-
 * Software controllable 5V 500mA BEC output connected to UAVCAN 5V line
-
 * RC PWM input available on test-pads(requires soldering)
-
 * 36.6 x 24.9 linear dimensions 
 
   The main advantage of BLOXA is its miniature size. To achieve it, a novel Mitochondrik mounting technique was used.
-
-  <img src="pics/construction.png"  width = "70%"/>
-
+<p align="center">
+<img src="pics/construction.png"  width = "60%"/>
 
   Mitochondrik is mounted on the power stage PCB using intermediary 2mm thick PCB that basically serves as a connector. Soldering is done using edge connectors on the Mitochondrik, the intermediary  PCB and the power stage PCB in the plane perpendicular to the PCB planes.  Also, one of the RF shields on the Mitochondrik had to be removed. 
 
   Of course, this mounting technique seems questionable from the vibration resistance point of view, but it allows for the smallest PCB design possible. Bloxa has no strict reliability requirements, so this technique is acceptable. 
 
-  <img src="pics/bloxa_drawing.png" alt="drawing"  width = "60%"/>
+<p align="center">
+<img src="pics/bloxa_drawing.png" alt="drawing"  width = "60%"/>
 ## Power stage details.
 
   Bloxa power stage uses three [BUK9K6R2-40E](https://www.digikey.com/products/en?keywords=1727-7274-1-ND) MOSFET arrays. 
