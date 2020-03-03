@@ -29,7 +29,7 @@ Zubax Bloxa is the most compact ESC design that is possible using Mitochondrik m
 
   The main advantage of BLOXA is its miniature size. To achieve it, a novel Mitochondrik mounting technique was used.
 
-  <img src="pics/construction.png" style="zoom:70%;" />
+  <img src="pics/construction.png" style="zoom:50%;" />
 
  
   Mitochondrik is mounted on the power stage PCB using intermediary 2mm thick PCB that basically serves as a connector. Soldering is done using edge connectors on the Mitochondrik, the intermediary  PCB and the power stage PCB in the plane perpendicular to the PCB planes.  Also, one of the RF shields on the Mitochondrik had to be removed. 
