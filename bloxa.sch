@@ -4216,7 +4216,7 @@ http://www.bccomponents.com/</description>
 <attributes>
 </attributes>
 <variantdefs>
-<variantdef name="Basic"/>
+<variantdef name="Basic" current="yes"/>
 <variantdef name="nocaps"/>
 </variantdefs>
 <classes>
@@ -4500,7 +4500,7 @@ http://www.bccomponents.com/</description>
 <wire x1="220.98" y1="69.85" x2="285.75" y2="69.85" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="285.75" y1="142.24" x2="220.98" y2="142.24" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="220.98" y1="142.24" x2="220.98" y2="69.85" width="0.1524" layer="97" style="shortdash"/>
-<text x="228.6" y="144.78" size="2.54" layer="97" font="vector" align="center-left">INDICATION</text>
+<text x="241.3" y="137.16" size="2.54" layer="97" font="vector" align="center-left">INDICATION</text>
 <text x="132.08" y="248.92" size="1.27" layer="97">The minimum specific bulk capacitance is 20 μF/A 
 (e.g. an ESC rated for 20 A DC requires at least 400 μF).</text>
 <text x="193.04" y="236.22" size="2.54" layer="97">PHASE_A</text>
@@ -4525,43 +4525,44 @@ http://www.bccomponents.com/</description>
 <text x="134.62" y="213.36" size="2.54" layer="97">Capacitor battery</text>
 <text x="134.62" y="208.28" size="1.27" layer="97">These capacitors should be placed 
 as close as possible to the power transistors.</text>
-<text x="134.62" y="198.12" size="1.778" layer="97">Temperature sensor</text>
-<text x="134.62" y="160.02" size="2.54" layer="97">Place close to power mosfets</text>
-<text x="233.68" y="38.1" size="1.778" layer="91">https://www.digikey.com/product-detail/en/united-chemi-con/EKZN500ELL181MH20D/565-4066-ND/4843876</text>
+<text x="134.62" y="200.66" size="3.81" layer="97">Temperature sensor</text>
+<text x="134.62" y="165.1" size="2.54" layer="97">Place close to power mosfets</text>
 <wire x1="289.56" y1="134.62" x2="289.56" y2="63.5" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="289.56" y1="63.5" x2="375.92" y2="63.5" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="375.92" y1="63.5" x2="375.92" y2="134.62" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="375.92" y1="134.62" x2="289.56" y2="134.62" width="0.1524" layer="97" style="shortdash"/>
-<text x="20.32" y="30.48" size="1.27" layer="91" font="vector" ratio="15" align="center">DC power, W</text>
-<text x="38.1" y="30.48" size="1.27" layer="91" font="vector" ratio="15" align="center">Phase current, I</text>
-<text x="58.42" y="30.48" size="1.27" layer="91" font="vector" ratio="15" align="center">Total losses, W</text>
-<text x="81.28" y="30.48" size="1.27" layer="91" font="vector" ratio="15" align="center">Efficiency, %</text>
-<text x="20.32" y="25.4" size="1.27" layer="91" font="vector" ratio="15" align="center">100</text>
-<text x="20.32" y="22.86" size="1.27" layer="91" font="vector" ratio="15" align="center">150</text>
-<text x="20.32" y="20.32" size="1.27" layer="91" font="vector" ratio="15" align="center">200</text>
-<text x="20.32" y="17.78" size="1.27" layer="91" font="vector" ratio="15" align="center">250</text>
-<text x="20.32" y="15.24" size="1.27" layer="91" font="vector" ratio="15" align="center">300</text>
-<text x="50.8" y="10.16" size="1.27" layer="91" font="vector" ratio="15" align="center">The table is valid for 26.4 V supply voltage which is discharched 8S battery</text>
-<text x="38.1" y="25.4" size="1.27" layer="91" font="vector" ratio="15" align="center">4.8</text>
-<text x="58.42" y="25.4" size="1.27" layer="91" font="vector" ratio="15" align="center">1.7</text>
-<text x="81.28" y="25.4" size="1.27" layer="91" font="vector" ratio="15" align="center">98.3</text>
-<text x="38.1" y="22.86" size="1.27" layer="91" font="vector" ratio="15" align="center">7.2</text>
-<text x="58.42" y="22.86" size="1.27" layer="91" font="vector" ratio="15" align="center">3</text>
-<text x="81.28" y="22.86" size="1.27" layer="91" font="vector" ratio="15" align="center">98</text>
-<text x="38.1" y="20.32" size="1.27" layer="91" font="vector" ratio="15" align="center">9.6</text>
-<text x="58.42" y="20.32" size="1.27" layer="91" font="vector" ratio="15" align="center">4.5</text>
-<text x="81.28" y="20.32" size="1.27" layer="91" font="vector" ratio="15" align="center">97.7</text>
-<text x="38.1" y="17.78" size="1.27" layer="91" font="vector" ratio="15" align="center">12</text>
-<text x="58.42" y="17.78" size="1.27" layer="91" font="vector" ratio="15" align="center">6.3</text>
-<text x="81.28" y="17.78" size="1.27" layer="91" font="vector" ratio="15" align="center">97.5</text>
-<text x="38.1" y="15.24" size="1.27" layer="91" font="vector" ratio="15" align="center">14.4</text>
-<text x="58.42" y="15.24" size="1.27" layer="91" font="vector" ratio="15" align="center">8.4</text>
-<text x="81.28" y="15.24" size="1.27" layer="91" font="vector" ratio="15" align="center">97.2</text>
-<text x="53.34" y="35.56" size="1.27" layer="91" font="vector" ratio="15" align="center">Power losses for different power levels</text>
+<text x="25.4" y="48.26" size="1.27" layer="91" font="vector" ratio="15" align="center">DC power, W</text>
+<text x="43.18" y="48.26" size="1.27" layer="91" font="vector" ratio="15" align="center">Phase current, I</text>
+<text x="63.5" y="48.26" size="1.27" layer="91" font="vector" ratio="15" align="center">Total losses, W</text>
+<text x="86.36" y="48.26" size="1.27" layer="91" font="vector" ratio="15" align="center">Efficiency, %</text>
+<text x="25.4" y="43.18" size="1.27" layer="91" font="vector" ratio="15" align="center">100</text>
+<text x="25.4" y="40.64" size="1.27" layer="91" font="vector" ratio="15" align="center">150</text>
+<text x="25.4" y="38.1" size="1.27" layer="91" font="vector" ratio="15" align="center">200</text>
+<text x="25.4" y="35.56" size="1.27" layer="91" font="vector" ratio="15" align="center">250</text>
+<text x="25.4" y="33.02" size="1.27" layer="91" font="vector" ratio="15" align="center">300</text>
+<text x="55.88" y="27.94" size="1.27" layer="91" font="vector" ratio="15" align="center">The table is valid for 26.4 V supply voltage which is discharched 8S battery</text>
+<text x="43.18" y="43.18" size="1.27" layer="91" font="vector" ratio="15" align="center">4.8</text>
+<text x="63.5" y="43.18" size="1.27" layer="91" font="vector" ratio="15" align="center">1.7</text>
+<text x="86.36" y="43.18" size="1.27" layer="91" font="vector" ratio="15" align="center">98.3</text>
+<text x="43.18" y="40.64" size="1.27" layer="91" font="vector" ratio="15" align="center">7.2</text>
+<text x="63.5" y="40.64" size="1.27" layer="91" font="vector" ratio="15" align="center">3</text>
+<text x="86.36" y="40.64" size="1.27" layer="91" font="vector" ratio="15" align="center">98</text>
+<text x="43.18" y="38.1" size="1.27" layer="91" font="vector" ratio="15" align="center">9.6</text>
+<text x="63.5" y="38.1" size="1.27" layer="91" font="vector" ratio="15" align="center">4.5</text>
+<text x="86.36" y="38.1" size="1.27" layer="91" font="vector" ratio="15" align="center">97.7</text>
+<text x="43.18" y="35.56" size="1.27" layer="91" font="vector" ratio="15" align="center">12</text>
+<text x="63.5" y="35.56" size="1.27" layer="91" font="vector" ratio="15" align="center">6.3</text>
+<text x="86.36" y="35.56" size="1.27" layer="91" font="vector" ratio="15" align="center">97.5</text>
+<text x="43.18" y="33.02" size="1.27" layer="91" font="vector" ratio="15" align="center">14.4</text>
+<text x="63.5" y="33.02" size="1.27" layer="91" font="vector" ratio="15" align="center">8.4</text>
+<text x="86.36" y="33.02" size="1.27" layer="91" font="vector" ratio="15" align="center">97.2</text>
+<text x="58.42" y="53.34" size="1.27" layer="91" font="vector" ratio="15" align="center">Power losses for different power levels</text>
 <text x="63.5" y="111.76" size="1.778" layer="91" font="vector" ratio="15" align="center-left">R14 sets overcurrent protection trip level. 
 680R sets ir arount 35A, which is 2.5 times 
 higher than maximum phase current for 300W DC power 
 when running on discharged 8S battery</text>
+<text x="88.9" y="246.38" size="1.778" layer="91" font="vector" ratio="15" align="center">For 3d model check this link
+https://a360.co/3asTElW</text>
 </plain>
 <instances>
 <instance part="+P2" gate="G$1" x="45.72" y="238.76" smashed="yes">
@@ -5954,22 +5955,22 @@ when running on discharged 8S battery</text>
 </net>
 <net name="N$1" class="0">
 <segment>
-<wire x1="12.7" y1="33.02" x2="12.7" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="27.94" x2="12.7" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="12.7" x2="27.94" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="12.7" x2="48.26" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="12.7" x2="71.12" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="12.7" x2="91.44" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="33.02" x2="71.12" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="33.02" x2="48.26" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="33.02" x2="27.94" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="33.02" x2="12.7" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="33.02" x2="91.44" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="27.94" x2="91.44" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="33.02" x2="71.12" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="33.02" x2="48.26" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="33.02" x2="27.94" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="27.94" x2="91.44" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="50.8" x2="17.78" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="45.72" x2="17.78" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="30.48" x2="33.02" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="30.48" x2="53.34" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="30.48" x2="76.2" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="30.48" x2="96.52" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="50.8" x2="76.2" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="50.8" x2="53.34" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="50.8" x2="33.02" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="50.8" x2="17.78" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="50.8" x2="96.52" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="45.72" x2="96.52" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="50.8" x2="76.2" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="50.8" x2="53.34" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="50.8" x2="33.02" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="45.72" x2="96.52" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
