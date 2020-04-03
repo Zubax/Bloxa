@@ -10,12 +10,8 @@ Zubax Bloxa is the most compact ESC design that is possible using Mitochondrik m
 * [UAVCAN hardware recommendations](https://uavcan.org/Specification/8._Hardware_design_recommendations/) following
 
 <p align="center">
-<img src="pics/bloxa_top.png" alt="Bloxa top"  width = "50%" />
-
-<p align="center">
-<img src="pics/bloxa_bottom.png" alt="Bloxa bottom"  width = "50%" />
-
-
+<img src="pics/bloxa.png" alt="Bloxa top"  width = "100%" />
+  
 ## Brief specs
 
 * Operating voltage range 4-8S Li-Po (LiCoO<sub>2</sub>) battery (12-34 V)
