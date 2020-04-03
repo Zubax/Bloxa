@@ -50,7 +50,7 @@ Bloxa power stage uses three [BUK9K6R2-40E](https://www.digikey.com/products/en?
 
 Current shunt value is 10 mOhm.
 
-Bulk capacitor bank is formed with 3 [180 µF  aluminum electrolytic capacitors](https://www.digikey.com/products/en?keywords=565-4066-ND) from [ United Chemi-Con](https://www.digikey.com/en/supplier-centers/u/united-chemi-con).
+The bulk capacitor bank is formed with 3 [180 µF  aluminum electrolytic capacitors](https://www.digikey.com/products/en?keywords=565-4066-ND) from [ United Chemi-Con](https://www.digikey.com/en/supplier-centers/u/united-chemi-con).
 
 Overcurrent protection trip value is set to 35 A. 
 
