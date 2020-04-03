@@ -35,7 +35,7 @@ Mitochondrik is mounted on the power stage PCB using intermediary 2mm thick PCB 
 Of course, this mounting technique seems questionable from the vibration resistance point of view, but it allows for the smallest PCB design possible. Bloxa has no strict reliability requirements, so this technique is acceptable. 
 
 <p align="center">
-<img src="pics/bloxa_drawing.png" alt="drawing"  width = "50%"/>
+<img src="pics/drawing.png" alt="drawing"  width = "80%"/>
 
 ## Power stage details.
 
