@@ -10,12 +10,8 @@ Zubax Bloxa is the most compact ESC design that is possible using Mitochondrik m
 * [UAVCAN hardware recommendations](https://uavcan.org/Specification/8._Hardware_design_recommendations/) following
 
 <p align="center">
-<img src="pics/bloxa_top.png" alt="Bloxa top"  width = "50%" />
-
-<p align="center">
-<img src="pics/bloxa_bottom.png" alt="Bloxa bottom"  width = "50%" />
-
-
+<img src="pics/bloxa.png" alt="Bloxa top"  width = "100%" />
+  
 ## Brief specs
 
 * Operating voltage range 4-8S Li-Po (LiCoO<sub>2</sub>) battery (12-34 V)
@@ -35,7 +31,7 @@ Mitochondrik is mounted on the power stage PCB using intermediary 2mm thick PCB 
 Of course, this mounting technique seems questionable from the vibration resistance point of view, but it allows for the smallest PCB design possible. Bloxa has no strict reliability requirements, so this technique is acceptable. 
 
 <p align="center">
-<img src="pics/bloxa_drawing.png" alt="drawing"  width = "50%"/>
+<img src="pics/drawing.png" alt="drawing"  width = "80%"/>
 
 ## Power stage details.
 
