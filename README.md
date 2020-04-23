@@ -45,7 +45,7 @@ Bloxa power stage uses three [BUK9K6R2-40E](https://www.digikey.com/products/en?
 | R<sub>ds on</sub> (Max) @ I<sub>d</sub>, V<sub>gs</sub> | 6 mOhm @ 25 A, 10 V |
 | Gate Charge (Q<sub>g</sub>) (Max) @ V<sub>gs</sub>      | 35.4 nC @ 10 V      |
 
-Current shunt value is 10 mOhm.
+The current shunt value is 10 mOhm.
 
 The bulk capacitor bank is formed with 3 [180 µF  aluminum electrolytic capacitors](https://www.digikey.com/products/en?keywords=565-4066-ND) from [ United Chemi-Con](https://www.digikey.com/en/supplier-centers/u/united-chemi-con).
 
