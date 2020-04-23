@@ -2,7 +2,7 @@
 
 ## Overview
 
-Zubax Bloxa is the most compact ESC design that is possible using Mitochondrik module (at least it seems to be it). The **key design requirements** for BLOXA are:
+Zubax Bloxa is arguably the most compact practical ESC design based on the Mitochondrik module. The **key design requirements** for Bloxa are:
 
 * Small size
 * Low mass
