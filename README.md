@@ -13,7 +13,7 @@ Zubax Bloxa is arguably the most compact practical ESC design based on the Mitoc
   
 ## Brief specs
 
-* Operating voltage range 4-8S Li-Po (LiCoO<sub>2</sub>) battery (12-34 V)
+* Operating voltage range 4-8S Li-ion (LiCoO<sub>2</sub>) battery (12-34 V)
 * Continuous power 200 W
 * 1 UAVCAN interface
 * Software controllable 5V 500 mA BEC output connected to UAVCAN 5 V line
