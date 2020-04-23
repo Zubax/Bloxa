@@ -17,7 +17,7 @@ Zubax Bloxa is arguably the most compact practical ESC design based on the Mitoc
 * Continuous power 200 W
 * 1 UAVCAN interface
 * Software controllable 5V 500 mA BEC output connected to UAVCAN 5 V line
-* RC PWM input available on test-pads (requires soldering)
+* RC PWM input available on test pads (requires soldering)
 * 36.6 x 24.9 linear dimensions
 
 The main advantage of BLOXA is its miniature size. To achieve it, a novel Mitochondrik mounting technique was used.
