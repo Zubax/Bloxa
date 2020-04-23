@@ -9,7 +9,6 @@ Zubax Bloxa is arguably the most compact practical ESC design based on the Mitoc
 * Low COG
 * Compatible with the [UAVCAN hardware design recommendations](https://uavcan.org/specification)
 
-<p align="center">
 <img src="pics/bloxa.png" alt="Bloxa top"  width = "100%" />
   
 ## Brief specs
