@@ -24,6 +24,7 @@ The main advantage of Bloxa is its miniature size. To achieve it, a novel Mitoch
 
 <p align="center">
 <img src="pics/construction.png"  width = "50%"/>
+</p>
 
 Mitochondrik is mounted on the power stage PCB using an intermediary 2mm thick PCB that basically serves as a connector.
 Soldering is done using the edge connectors on the Mitochondrik, the intermediary  PCB, and the power stage PCB in the plane perpendicular to the PCB planes. 
