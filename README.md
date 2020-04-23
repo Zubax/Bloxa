@@ -20,7 +20,7 @@ Zubax Bloxa is arguably the most compact practical ESC design based on the Mitoc
 * RC PWM input available on test pads (requires soldering)
 * 36.6 x 24.9 linear dimensions
 
-The main advantage of BLOXA is its miniature size. To achieve it, a novel Mitochondrik mounting technique was used.
+The main advantage of Bloxa is its miniature size. To achieve it, a novel Mitochondrik mounting technique is used.
 
 <p align="center">
 <img src="pics/construction.png"  width = "50%"/>
