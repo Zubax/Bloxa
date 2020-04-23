@@ -29,7 +29,7 @@ Mitochondrik is mounted on the power stage PCB using an intermediary 2mm thick P
 Soldering is done using the edge connectors on the Mitochondrik, the intermediary  PCB, and the power stage PCB in the plane perpendicular to the PCB planes. 
 Also, one of the RF shields on the Mitochondrik had to be removed (please contact Zubax Robotics for ordering).
 
-Of course, this mounting technique seems questionable from the vibration resistance point of view, but it allows for the smallest PCB design possible. Bloxa has no strict reliability requirements, so this technique is acceptable. 
+High-reliability designs may prefer to avoid such unconventional approaches to ensure predictable mechanical characteristics.
 
 <p align="center">
 <img src="pics/drawing.png" alt="drawing"  width = "80%"/>
