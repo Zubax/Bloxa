@@ -49,7 +49,7 @@ The current shunt value is 10 mOhm.
 
 The bulk capacitor bank is formed with 3 [180 µF aluminum electrolytic capacitors](https://www.digikey.com/products/en?keywords=565-4066-ND) from [United Chemi-Con](https://www.digikey.com/en/supplier-centers/u/united-chemi-con).
 
-Overcurrent protection trip value is set to 35 A. 
+The overcurrent protection trip value is set to 35 A. 
 
 ## License
 
