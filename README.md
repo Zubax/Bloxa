@@ -25,7 +25,9 @@ The main advantage of BLOXA is its miniature size. To achieve it, a novel Mitoch
 <p align="center">
 <img src="pics/construction.png"  width = "50%"/>
 
-Mitochondrik is mounted on the power stage PCB using intermediary 2mm thick PCB that basically serves as a connector. Soldering is done using edge connectors on the Mitochondrik, the intermediary  PCB and the power stage PCB in the plane perpendicular to the PCB planes.  Also, one of the RF shields on the Mitochondrik had to be removed. 
+Mitochondrik is mounted on the power stage PCB using an intermediary 2mm thick PCB that basically serves as a connector.
+Soldering is done using the edge connectors on the Mitochondrik, the intermediary  PCB, and the power stage PCB in the plane perpendicular to the PCB planes. 
+Also, one of the RF shields on the Mitochondrik had to be removed (please contact Zubax Robotics for ordering).
 
 Of course, this mounting technique seems questionable from the vibration resistance point of view, but it allows for the smallest PCB design possible. Bloxa has no strict reliability requirements, so this technique is acceptable. 
 
