@@ -33,6 +33,7 @@ High-reliability designs may prefer to avoid such unconventional approaches to e
 
 <p align="center">
 <img src="pics/drawing.png" alt="drawing"  width = "80%"/>
+</p>
 
 ## Power stage details.
 
