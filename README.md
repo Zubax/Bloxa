@@ -7,7 +7,7 @@ Zubax Bloxa is the most compact ESC design that is possible using Mitochondrik m
 * Small size
 * Low mass
 * Low COG
-* [UAVCAN hardware recommendations](https://uavcan.org/Specification/8._Hardware_design_recommendations/) following
+* Compatible with the [UAVCAN hardware design recommendations](https://uavcan.org/specification)
 
 <p align="center">
 <img src="pics/bloxa.png" alt="Bloxa top"  width = "100%" />
