@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.0">
+<eagle version="9.6.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -4248,7 +4248,7 @@ http://www.bccomponents.com/</description>
 <attributes>
 </attributes>
 <variantdefs>
-<variantdef name="Basic"/>
+<variantdef name="Basic" current="yes"/>
 <variantdef name="nocaps"/>
 </variantdefs>
 <classes>
@@ -4564,38 +4564,52 @@ as close as possible to the power transistors.</text>
 <wire x1="289.56" y1="63.5" x2="375.92" y2="63.5" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="375.92" y1="63.5" x2="375.92" y2="134.62" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="375.92" y1="134.62" x2="289.56" y2="134.62" width="0.1524" layer="97" style="shortdash"/>
-<text x="25.4" y="48.26" size="1.27" layer="91" font="vector" ratio="15" align="center">DC power, W</text>
-<text x="43.18" y="48.26" size="1.27" layer="91" font="vector" ratio="15" align="center">Phase current, I</text>
-<text x="63.5" y="48.26" size="1.27" layer="91" font="vector" ratio="15" align="center">Total losses, W</text>
-<text x="86.36" y="48.26" size="1.27" layer="91" font="vector" ratio="15" align="center">Efficiency, %</text>
-<text x="25.4" y="43.18" size="1.27" layer="91" font="vector" ratio="15" align="center">100</text>
-<text x="25.4" y="40.64" size="1.27" layer="91" font="vector" ratio="15" align="center">150</text>
-<text x="25.4" y="38.1" size="1.27" layer="91" font="vector" ratio="15" align="center">200</text>
-<text x="25.4" y="35.56" size="1.27" layer="91" font="vector" ratio="15" align="center">250</text>
-<text x="25.4" y="33.02" size="1.27" layer="91" font="vector" ratio="15" align="center">300</text>
-<text x="55.88" y="27.94" size="1.27" layer="91" font="vector" ratio="15" align="center">The table is valid for 26.4 V supply voltage which is discharched 8S battery</text>
-<text x="43.18" y="43.18" size="1.27" layer="91" font="vector" ratio="15" align="center">4.8</text>
-<text x="63.5" y="43.18" size="1.27" layer="91" font="vector" ratio="15" align="center">1.7</text>
-<text x="86.36" y="43.18" size="1.27" layer="91" font="vector" ratio="15" align="center">98.3</text>
-<text x="43.18" y="40.64" size="1.27" layer="91" font="vector" ratio="15" align="center">7.2</text>
-<text x="63.5" y="40.64" size="1.27" layer="91" font="vector" ratio="15" align="center">3</text>
-<text x="86.36" y="40.64" size="1.27" layer="91" font="vector" ratio="15" align="center">98</text>
-<text x="43.18" y="38.1" size="1.27" layer="91" font="vector" ratio="15" align="center">9.6</text>
-<text x="63.5" y="38.1" size="1.27" layer="91" font="vector" ratio="15" align="center">4.5</text>
-<text x="86.36" y="38.1" size="1.27" layer="91" font="vector" ratio="15" align="center">97.7</text>
-<text x="43.18" y="35.56" size="1.27" layer="91" font="vector" ratio="15" align="center">12</text>
-<text x="63.5" y="35.56" size="1.27" layer="91" font="vector" ratio="15" align="center">6.3</text>
-<text x="86.36" y="35.56" size="1.27" layer="91" font="vector" ratio="15" align="center">97.5</text>
-<text x="43.18" y="33.02" size="1.27" layer="91" font="vector" ratio="15" align="center">14.4</text>
-<text x="63.5" y="33.02" size="1.27" layer="91" font="vector" ratio="15" align="center">8.4</text>
-<text x="86.36" y="33.02" size="1.27" layer="91" font="vector" ratio="15" align="center">97.2</text>
-<text x="58.42" y="53.34" size="1.27" layer="91" font="vector" ratio="15" align="center">Power losses for different power levels</text>
-<text x="63.5" y="111.76" size="1.778" layer="91" font="vector" ratio="15" align="center-left">R14 sets overcurrent protection trip level. 
+<text x="25.4" y="48.26" size="1.27" layer="97" font="vector" ratio="15" align="center">DC power, W</text>
+<text x="43.18" y="48.26" size="1.27" layer="97" font="vector" ratio="15" align="center">Phase current, I</text>
+<text x="63.5" y="48.26" size="1.27" layer="97" font="vector" ratio="15" align="center">Total losses, W</text>
+<text x="86.36" y="48.26" size="1.27" layer="97" font="vector" ratio="15" align="center">Efficiency, %</text>
+<text x="25.4" y="43.18" size="1.27" layer="97" font="vector" ratio="15" align="center">100</text>
+<text x="25.4" y="40.64" size="1.27" layer="97" font="vector" ratio="15" align="center">150</text>
+<text x="25.4" y="38.1" size="1.27" layer="97" font="vector" ratio="15" align="center">200</text>
+<text x="25.4" y="35.56" size="1.27" layer="97" font="vector" ratio="15" align="center">250</text>
+<text x="25.4" y="33.02" size="1.27" layer="97" font="vector" ratio="15" align="center">300</text>
+<text x="55.88" y="27.94" size="1.27" layer="97" font="vector" ratio="15" align="center">The table is valid for 26.4 V supply voltage which is discharched 8S battery</text>
+<text x="43.18" y="43.18" size="1.27" layer="97" font="vector" ratio="15" align="center">4.8</text>
+<text x="63.5" y="43.18" size="1.27" layer="97" font="vector" ratio="15" align="center">1.7</text>
+<text x="86.36" y="43.18" size="1.27" layer="97" font="vector" ratio="15" align="center">98.3</text>
+<text x="43.18" y="40.64" size="1.27" layer="97" font="vector" ratio="15" align="center">7.2</text>
+<text x="63.5" y="40.64" size="1.27" layer="97" font="vector" ratio="15" align="center">3</text>
+<text x="86.36" y="40.64" size="1.27" layer="97" font="vector" ratio="15" align="center">98</text>
+<text x="43.18" y="38.1" size="1.27" layer="97" font="vector" ratio="15" align="center">9.6</text>
+<text x="63.5" y="38.1" size="1.27" layer="97" font="vector" ratio="15" align="center">4.5</text>
+<text x="86.36" y="38.1" size="1.27" layer="97" font="vector" ratio="15" align="center">97.7</text>
+<text x="43.18" y="35.56" size="1.27" layer="97" font="vector" ratio="15" align="center">12</text>
+<text x="63.5" y="35.56" size="1.27" layer="97" font="vector" ratio="15" align="center">6.3</text>
+<text x="86.36" y="35.56" size="1.27" layer="97" font="vector" ratio="15" align="center">97.5</text>
+<text x="43.18" y="33.02" size="1.27" layer="97" font="vector" ratio="15" align="center">14.4</text>
+<text x="63.5" y="33.02" size="1.27" layer="97" font="vector" ratio="15" align="center">8.4</text>
+<text x="86.36" y="33.02" size="1.27" layer="97" font="vector" ratio="15" align="center">97.2</text>
+<text x="58.42" y="53.34" size="1.27" layer="97" font="vector" ratio="15" align="center">Power losses for different power levels</text>
+<text x="63.5" y="111.76" size="1.778" layer="97" font="vector" ratio="15" align="center-left">R14 sets overcurrent protection trip level. 
 680R sets ir arount 35A, which is 2.5 times 
 higher than maximum phase current for 300W DC power 
 when running on discharged 8S battery</text>
-<text x="88.9" y="246.38" size="1.778" layer="91" font="vector" ratio="15" align="center">For 3d model check this link
-https://a360.co/3asTElW</text>
+<wire x1="17.78" y1="50.8" x2="33.02" y2="50.8" width="0.1524" layer="97"/>
+<wire x1="33.02" y1="50.8" x2="53.34" y2="50.8" width="0.1524" layer="97"/>
+<wire x1="53.34" y1="50.8" x2="76.2" y2="50.8" width="0.1524" layer="97"/>
+<wire x1="76.2" y1="50.8" x2="96.52" y2="50.8" width="0.1524" layer="97"/>
+<wire x1="96.52" y1="50.8" x2="96.52" y2="45.72" width="0.1524" layer="97"/>
+<wire x1="96.52" y1="45.72" x2="96.52" y2="30.48" width="0.1524" layer="97"/>
+<wire x1="96.52" y1="30.48" x2="76.2" y2="30.48" width="0.1524" layer="97"/>
+<wire x1="76.2" y1="30.48" x2="53.34" y2="30.48" width="0.1524" layer="97"/>
+<wire x1="53.34" y1="30.48" x2="33.02" y2="30.48" width="0.1524" layer="97"/>
+<wire x1="33.02" y1="30.48" x2="17.78" y2="30.48" width="0.1524" layer="97"/>
+<wire x1="17.78" y1="30.48" x2="17.78" y2="45.72" width="0.1524" layer="97"/>
+<wire x1="17.78" y1="45.72" x2="17.78" y2="50.8" width="0.1524" layer="97"/>
+<wire x1="17.78" y1="45.72" x2="96.52" y2="45.72" width="0.1524" layer="97"/>
+<wire x1="76.2" y1="50.8" x2="76.2" y2="30.48" width="0.1524" layer="97"/>
+<wire x1="53.34" y1="50.8" x2="53.34" y2="30.48" width="0.1524" layer="97"/>
+<wire x1="33.02" y1="50.8" x2="33.02" y2="30.48" width="0.1524" layer="97"/>
 </plain>
 <instances>
 <instance part="+P2" gate="G$1" x="45.72" y="238.76" smashed="yes">
@@ -5614,6 +5628,12 @@ https://a360.co/3asTElW</text>
 <pinref part="R14" gate="G$1" pin="1"/>
 <pinref part="GND25" gate="1" pin="GND"/>
 </segment>
+<segment>
+<wire x1="342.9" y1="127" x2="350.52" y2="127" width="0.1524" layer="91"/>
+<pinref part="IC3" gate="G$1" pin="S"/>
+<pinref part="GND20" gate="1" pin="GND"/>
+<wire x1="350.52" y1="127" x2="350.52" y2="116.84" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="GNDD" class="0">
 <segment>
@@ -5965,14 +5985,6 @@ https://a360.co/3asTElW</text>
 <wire x1="292.1" y1="210.82" x2="294.64" y2="210.82" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$2" class="0">
-<segment>
-<wire x1="342.9" y1="127" x2="350.52" y2="127" width="0.1524" layer="91"/>
-<pinref part="GND20" gate="1" pin="GND"/>
-<wire x1="350.52" y1="127" x2="350.52" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="IC3" gate="G$1" pin="S"/>
-</segment>
-</net>
 <net name="N$4" class="0">
 <segment>
 <pinref part="LED3" gate="G$1" pin="G"/>
@@ -5986,32 +5998,12 @@ https://a360.co/3asTElW</text>
 <junction x="271.78" y="104.14"/>
 </segment>
 </net>
-<net name="N$1" class="0">
-<segment>
-<wire x1="17.78" y1="50.8" x2="17.78" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="45.72" x2="17.78" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="30.48" x2="33.02" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="30.48" x2="53.34" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="30.48" x2="76.2" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="30.48" x2="96.52" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="50.8" x2="76.2" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="50.8" x2="53.34" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="50.8" x2="33.02" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="50.8" x2="17.78" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="50.8" x2="96.52" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="45.72" x2="96.52" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="50.8" x2="76.2" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="50.8" x2="53.34" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="50.8" x2="33.02" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="45.72" x2="96.52" y2="45.72" width="0.1524" layer="91"/>
-</segment>
-</net>
 </nets>
 </sheet>
 <sheet>
 <description>changelog</description>
 <plain>
-<text x="7.62" y="101.6" size="1.778" layer="91" font="vector" align="center-left">-Current shunts replaced (5 mOhms replaced with 10 mOhms)-
+<text x="7.62" y="124.46" size="1.778" layer="97" font="vector" align="top-left">-Current shunts replaced (5 mOhms replaced with 10 mOhms)-
 -Overcurrent protection added. Itrip is ~35 A
 -RCPWM th connector replaced with smd solder pads
 -Some design notes added to the schematic</text>
@@ -6030,15 +6022,24 @@ https://a360.co/3asTElW</text>
 </sheet>
 </sheets>
 <errors>
-<approved hash="104,1,119.38,167.64,IC6,AVDD,N$37,,,"/>
-<approved hash="104,1,119.38,165.1,IC6,AGND,GND,,,"/>
-<approved hash="104,1,152.4,165.1,IC6,PVDD1,VBAT,,,"/>
-<approved hash="104,1,152.4,226.06,IC6,PVDD2,VBAT,,,"/>
-<approved hash="104,1,152.4,228.6,IC6,PVDD2,VBAT,,,"/>
-<approved hash="104,1,134.62,160.02,IC6,POWERPAD,GND,,,"/>
-<approved hash="206,1,152.4,220.98,N$4,,,,,"/>
-<approved hash="206,1,152.4,218.44,N$4,,,,,"/>
+<approved hash="106,1,45.72,137.16,CAN2_LED,,,,,"/>
+<approved hash="106,1,45.72,152.4,CAN2_RX,,,,,"/>
+<approved hash="106,1,45.72,154.94,CAN2_TX,,,,,"/>
+<approved hash="106,1,45.72,109.22,EN_GATE_OUT,,,,,"/>
+<approved hash="106,1,45.72,106.68,GAIN_OUT,,,,,"/>
+<approved hash="106,1,45.72,111.76,GPIO2,,,,,"/>
+<approved hash="106,1,45.72,96.52,POWER_ENABLE_IN,,,,,"/>
+<approved hash="106,1,45.72,91.44,USART_RX,,,,,"/>
+<approved hash="106,1,45.72,93.98,USART_TX,,,,,"/>
+<approved hash="106,1,45.72,132.08,USB+,,,,,"/>
+<approved hash="106,1,45.72,129.54,USB-,,,,,"/>
+<approved hash="106,1,45.72,127,USB_VBUS,,,,,"/>
+<approved hash="110,1,360.68,101.6,CAN1_VDD,GNDD,,,,"/>
+<approved hash="110,1,360.68,101.6,CAN1_VDD,GNDD,,,,"/>
+<approved hash="110,1,358.14,121.92,N$22,N$23,,,,"/>
+<approved hash="110,1,358.14,121.92,N$22,N$23,,,,"/>
 <approved hash="113,1,193.571,130.071,FRAME1,,,,,"/>
+<approved hash="113,2,91.971,66.571,FRAME2,,,,,"/>
 </errors>
 </schematic>
 </drawing>

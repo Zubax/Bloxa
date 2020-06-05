@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.0">
+<eagle version="9.6.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -10940,6 +10940,21 @@
 <vertex x="9.7" y="-8"/>
 <vertex x="11.3" y="-8"/>
 </polygon>
+<contactref element="IC3" pad="8"/>
+<wire x1="-10.975" y1="-9.1" x2="-10.775" y2="-10.85" width="0" layer="19" extent="1-1"/>
+<wire x1="-7.125" y1="-7.8" x2="-10.625" y2="-8.25" width="0" layer="19" extent="16-16"/>
+<wire x1="-6.05" y1="-6.1" x2="-7.125" y2="-7.8" width="0" layer="19" extent="16-16"/>
+<wire x1="-5.8" y1="-4.3" x2="-6.05" y2="-6.1" width="0" layer="19" extent="1-1"/>
+<wire x1="-8" y1="-4.465" x2="-5.8" y2="-4.3" width="0" layer="19" extent="1-1"/>
+<wire x1="-2.8" y1="-3.195" x2="-5.8" y2="-4.3" width="0" layer="19" extent="1-1"/>
+<wire x1="-0.975" y1="-3.725" x2="-2.8" y2="-3.195" width="0" layer="19" extent="1-1"/>
+<wire x1="-1.2" y1="-4.85" x2="-0.975" y2="-3.725" width="0" layer="19" extent="1-1"/>
+<wire x1="-7.25" y1="-11.575" x2="-10.775" y2="-10.85" width="0" layer="19" extent="1-1"/>
+<wire x1="10.325" y1="-5.325" x2="0.175" y2="-3.625" width="0" layer="19" extent="1-1"/>
+<wire x1="10.4" y1="-6.1" x2="10.325" y2="-5.325" width="0" layer="19" extent="1-1"/>
+<wire x1="11" y1="-6.1" x2="10.4" y2="-6.1" width="0" layer="19" extent="1-1"/>
+<wire x1="10.425" y1="-7.33" x2="10.4" y2="-6.1" width="0" layer="19" extent="1-1"/>
+<wire x1="10.5" y1="-1.55" x2="10.325" y2="-5.325" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="VDC" class="1">
 <contactref element="C9" pad="2"/>
@@ -11464,9 +11479,6 @@
 <wire x1="2.3" y1="5.9" x2="2.5" y2="5.7" width="0.2" layer="1"/>
 </signal>
 <signal name="USB_VBUS1">
-</signal>
-<signal name="N$2">
-<contactref element="IC3" pad="8"/>
 </signal>
 <signal name="N$4">
 <contactref element="LED3" pad="G"/>
