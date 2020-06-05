@@ -53,14 +53,6 @@ The bulk capacitor bank is formed with 3 [180 µF aluminum electrolytic capacito
 
 The overcurrent protection trip value is set to 35 A. 
 
-## Release notes
-Newest entries at the top.
-### Bloxa V0.2
-* Current shunts replaced (5 mOhms replaced with 10 mOhms)
-* Overcurrent protection added. Itrip is ~35 A.
-* RCPWM through-hole connector replaced with smd solder pads.
-* Power loss estimations table added to the schematic
-* TVS diode (D1) replaced with one that has lower breaksdown voltage.
 ## License
 
 This project is licensed under the terms of [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/).
