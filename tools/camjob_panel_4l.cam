@@ -97,7 +97,7 @@
                     },
                     "filename_format": "/gerber/%N/%NAME.gbr",
                     "layers": [
-                        20
+                        49
                     ],
                     "milling": true,
                     "name": "profile",
@@ -195,6 +195,21 @@
                     "name": "silkscreen bottom",
                     "polarity": "positive",
                     "type": "gerber_layer"
+                },
+                {
+                    "board_outline": false,
+                    "config": {
+                        "description": "Other",
+                        "file_function": "Other"
+                    },
+                    "filename_format": "/gerber/%N/%NAME.gbr",
+                    "layers": [
+                        46
+                    ],
+                    "milling": false,
+                    "name": "milling",
+                    "polarity": "positive",
+                    "type": "gerber_layer"
                 }
             ],
             "version": "RS274X"
@@ -212,12 +227,12 @@
                         "PTH": true,
                         "VIA": true
                     },
-                    "filename_format": "/gerber/%N/drills.xln",
+                    "filename_format": "/gerber/%N/%NAME.gbr",
                     "layers": {
                         "from": 1,
                         "to": 16
                     },
-                    "name": "Excellon",
+                    "name": "drills",
                     "type": "excellon"
                 }
             ]
@@ -226,12 +241,6 @@
             "filename_prefix": "CAMOutputs/Assembly",
             "output_type": "assembly",
             "outputs": [
-                {
-                    "filename_format": "/PnP/%N/PnP_%BOARDSIDE",
-                    "name": "Pick and Place",
-                    "output_format": "txt",
-                    "type": "pick_and_place"
-                }
             ]
         },
         {
@@ -241,7 +250,7 @@
             ]
         }
     ],
-    "timestamp": "2020-06-03T13:27:21",
+    "timestamp": "2020-06-03T16:25:20",
     "type": "EAGLE CAM job",
     "units": "metric",
     "version": "8.6.1"
