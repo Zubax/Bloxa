@@ -27,7 +27,7 @@ The main advantage of Bloxa is its miniature size. To achieve it, a novel Mitoch
 </p>
 Mitochondrik is mounted on the power stage PCB using an intermediary 2 mm thick PCB that basically serves as a connector.
 Soldering is done using the edge connectors on the Mitochondrik, the intermediary  PCB, and the power stage PCB in the plane perpendicular to the PCB planes. 
-Also, one of the RF shields on the Mitochondrik had to be removed (compatible Mitochondrik modules are available upon request, please contact Zubax Robotics).
+Also, one of the RF shields on the Mitochondrik has not to be mounted (compatible Mitochondrik modules are available upon request, please contact Zubax Robotics).
 
 High-reliability designs may prefer to avoid such unconventional approaches to ensure predictable mechanical characteristics.
 
