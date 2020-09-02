@@ -59,7 +59,7 @@ Newest entries at the top.
 * Overcurrent protection added. Itrip is ~35 A.
 * RCPWM through-hole connector replaced with smd solder pads.
 * Power loss estimations table added to the schematic
-* TVS diode (D1) replaced with one that has lower breaksdown voltage.
+* TVS diode (D1) replaced with one that has lower breakdown voltage.
 
 ## License
 
