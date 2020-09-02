@@ -55,10 +55,10 @@ The overcurrent protection trip value is set to 35 A.
 ## Release notes
 Newest entries at the top.
 ### Bloxa V0.2
-* Current shunts replaced (5 mOhms replaced with 10 mOhms)
+* Current shunts replaced (5 mOhms replaced with 10 mOhms).
 * Overcurrent protection added. Itrip is ~35 A.
 * RCPWM through-hole connector replaced with smd solder pads.
-* Power loss estimations table added to the schematic
+* Power loss estimations table added to the schematic.
 * TVS diode (D1) replaced with one that has lower breakdown voltage.
 
 ## License
