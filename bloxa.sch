@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.1">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -6061,7 +6061,7 @@ when running on discharged 8S battery</text>
 <sheet>
 <description>changelog</description>
 <plain>
-<text x="7.62" y="124.46" size="1.778" layer="97" font="vector" align="top-left">-Current shunts replaced (5 mOhms replaced with 10 mOhms)-
+<text x="7.62" y="124.46" size="1.778" layer="97" font="vector" align="top-left">-Current shunts replaced (5 mOhms replaced with 10 mOhms)
 -Overcurrent protection added. Itrip is ~35 A
 -RCPWM th connector replaced with smd solder pads
 -Some design notes added to the schematic
