@@ -10,7 +10,7 @@ Zubax Bloxa is arguably the most compact practical ESC design based on the Mitoc
 * Compatible with the [UAVCAN hardware design recommendations](https://uavcan.org/specification)
 
 <img src="pics/bloxa.png" alt="Bloxa top"  width = "100%" />
-  
+
 ## Brief specs
 
 * Operating voltage range 4-8S Li-ion (LiCoO<sub>2</sub>) battery (12-34 V)
@@ -25,10 +25,9 @@ The main advantage of Bloxa is its miniature size. To achieve it, a novel Mitoch
 <p align="center">
 <img src="pics/construction.png"  width = "50%"/>
 </p>
-
-Mitochondrik is mounted on the power stage PCB using an intermediary 2mm thick PCB that basically serves as a connector.
+Mitochondrik is mounted on the power stage PCB using an intermediary 2 mm thick PCB that basically serves as a connector.
 Soldering is done using the edge connectors on the Mitochondrik, the intermediary  PCB, and the power stage PCB in the plane perpendicular to the PCB planes. 
-Also, one of the RF shields on the Mitochondrik had to be removed (please contact Zubax Robotics for ordering).
+Also, one of the RF shields on the Mitochondrik has not to be mounted (compatible Mitochondrik modules are available upon request, please contact Zubax Robotics).
 
 High-reliability designs may prefer to avoid such unconventional approaches to ensure predictable mechanical characteristics.
 
@@ -52,6 +51,15 @@ The current shunt value is 10 mOhm.
 The bulk capacitor bank is formed with 3 [180 µF aluminum electrolytic capacitors](https://www.digikey.com/products/en?keywords=565-4066-ND) from [United Chemi-Con](https://www.digikey.com/en/supplier-centers/u/united-chemi-con).
 
 The overcurrent protection trip value is set to 35 A. 
+
+## Release notes
+Newest entries at the top.
+### Bloxa V0.2
+* Current shunts replaced (5 mOhms replaced with 10 mOhms).
+* Overcurrent protection added. Itrip is ~35 A.
+* RCPWM through-hole connector replaced with smd solder pads.
+* Power loss estimations table added to the schematic.
+* TVS diode (D1) replaced with one that has lower breakdown voltage.
 
 ## License
 
