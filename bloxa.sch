@@ -4563,11 +4563,11 @@ http://www.bccomponents.com/</description>
 <part name="LED3" library="misc" library_urn="urn:adsk.eagle:library:5347860" deviceset="LTST-C19HE1WT" device="" package3d_urn="urn:adsk.eagle:package:20072926/2">
 <variant name="Basic" populate="no"/>
 </part>
-<part name="R14" library="rc" library_urn="urn:adsk.eagle:library:2539423" deviceset="R" device="-0402" package3d_urn="urn:adsk.eagle:package:2539456/2" technology="-1%" value="680R">
+<part name="R14" library="rc" library_urn="urn:adsk.eagle:library:2539423" deviceset="R" device="-0402" package3d_urn="urn:adsk.eagle:package:2539456/2" technology="-1%" value="1K74">
 <attribute name="AEC-Q" value="AEC-Q200"/>
-<attribute name="DIGIKEY#" value="CRCW0402680RFKEDDatasheet "/>
+<attribute name="DIGIKEY#" value="541-1.74KLCT-ND"/>
 <attribute name="MANF" value="Vishay Dale"/>
-<attribute name="MANF#" value="CRCW0402680RFKED"/>
+<attribute name="MANF#" value="CRCW04021K74FKED"/>
 </part>
 <part name="GND25" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="GND" device="" value="GND"/>
 <part name="PAD47" library="PADS" library_urn="urn:adsk.eagle:library:3188696" deviceset="PAD" device="-S-1.5" package3d_urn="urn:adsk.eagle:package:15477730/1"/>
@@ -4650,9 +4650,8 @@ which is the same as a discharched 8S Li-ion battery</text>
 <text x="78.74" y="20.32" size="1.27" layer="97" font="vector" ratio="15" align="center">97.2</text>
 <text x="50.8" y="40.64" size="1.27" layer="97" font="vector" ratio="15" align="center">Power losses for different power levels</text>
 <text x="63.5" y="111.76" size="1.778" layer="97" font="vector" ratio="15" align="center-left">R14 sets overcurrent protection trip level. 
-680R sets ir arount 35A, which is 2.5 times 
-higher than maximum phase current for 300W DC power 
-when running on discharged 8S battery</text>
+1.74 KOhm sets Itrip around 80A, which is 2 times 
+higher than maximum phase current at 40 A</text>
 <wire x1="10.16" y1="38.1" x2="25.4" y2="38.1" width="0.1524" layer="97"/>
 <wire x1="25.4" y1="38.1" x2="45.72" y2="38.1" width="0.1524" layer="97"/>
 <wire x1="45.72" y1="38.1" x2="68.58" y2="38.1" width="0.1524" layer="97"/>
@@ -5192,7 +5191,7 @@ when running on discharged 8S battery</text>
 <pinref part="IC3" gate="G$1" pin="TXD"/>
 </segment>
 </net>
-<net name="RGB_LED_R" class="0">
+<net name="RGB_LED_RED" class="0">
 <segment>
 <wire x1="45.72" y1="119.38" x2="43.18" y2="119.38" width="0.1524" layer="91"/>
 <label x="43.18" y="119.38" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
@@ -5200,11 +5199,11 @@ when running on discharged 8S battery</text>
 </segment>
 <segment>
 <pinref part="R7" gate="G$1" pin="2"/>
-<wire x1="279.4" y1="78.74" x2="279.4" y2="83.82" width="0.1524" layer="91"/>
-<label x="279.4" y="78.74" size="1.27" layer="95" font="vector" rot="R270" xref="yes"/>
+<wire x1="279.4" y1="81.28" x2="279.4" y2="83.82" width="0.1524" layer="91"/>
+<label x="279.4" y="81.28" size="1.27" layer="95" font="vector" rot="R270" xref="yes"/>
 </segment>
 </net>
-<net name="RGB_LED_G" class="0">
+<net name="RGB_LED_GREEN" class="0">
 <segment>
 <wire x1="45.72" y1="121.92" x2="43.18" y2="121.92" width="0.1524" layer="91"/>
 <label x="43.18" y="121.92" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
@@ -5212,11 +5211,11 @@ when running on discharged 8S battery</text>
 </segment>
 <segment>
 <pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="274.32" y1="83.82" x2="274.32" y2="78.74" width="0.1524" layer="91"/>
-<label x="274.32" y="78.74" size="1.27" layer="95" font="vector" rot="R270" xref="yes"/>
+<wire x1="274.32" y1="83.82" x2="274.32" y2="81.28" width="0.1524" layer="91"/>
+<label x="274.32" y="81.28" size="1.27" layer="95" font="vector" rot="R270" xref="yes"/>
 </segment>
 </net>
-<net name="RGB_LED_B" class="0">
+<net name="RGB_LED_BLUE" class="0">
 <segment>
 <wire x1="45.72" y1="124.46" x2="43.18" y2="124.46" width="0.1524" layer="91"/>
 <label x="43.18" y="124.46" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
@@ -5224,8 +5223,8 @@ when running on discharged 8S battery</text>
 </segment>
 <segment>
 <pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="269.24" y1="83.82" x2="269.24" y2="78.74" width="0.1524" layer="91"/>
-<label x="269.24" y="78.74" size="1.27" layer="95" font="vector" rot="R270" xref="yes"/>
+<wire x1="269.24" y1="83.82" x2="269.24" y2="81.28" width="0.1524" layer="91"/>
+<label x="269.24" y="81.28" size="1.27" layer="95" font="vector" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="GPIO1" class="0">
@@ -5240,7 +5239,7 @@ when running on discharged 8S battery</text>
 <label x="365.76" y="157.48" size="1.27" layer="95" font="vector" ratio="15" rot="MR0" xref="yes"/>
 </segment>
 </net>
-<net name="PHASE_A_GND" class="0">
+<net name="PHASE_A_SOURCE_LOW" class="0">
 <segment>
 <label x="45.72" y="213.36" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 <wire x1="48.26" y1="213.36" x2="45.72" y2="213.36" width="0.1524" layer="91"/>
@@ -5274,7 +5273,7 @@ when running on discharged 8S battery</text>
 <label x="279.4" y="218.44" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="PHASE_B_GND" class="0">
+<net name="PHASE_B_SOURCE_LOW" class="0">
 <segment>
 <label x="45.72" y="203.2" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 <wire x1="45.72" y1="203.2" x2="48.26" y2="203.2" width="0.1524" layer="91"/>
@@ -5522,27 +5521,6 @@ when running on discharged 8S battery</text>
 <pinref part="R14" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="USB+" class="0">
-<segment>
-<wire x1="45.72" y1="132.08" x2="43.18" y2="132.08" width="0.1524" layer="91"/>
-<label x="43.18" y="132.08" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
-<pinref part="PAD7" gate="G$1" pin="P$1"/>
-</segment>
-</net>
-<net name="USB-" class="0">
-<segment>
-<wire x1="45.72" y1="129.54" x2="43.18" y2="129.54" width="0.1524" layer="91"/>
-<label x="43.18" y="129.54" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
-<pinref part="PAD8" gate="G$1" pin="P$1"/>
-</segment>
-</net>
-<net name="USB_VBUS" class="0">
-<segment>
-<wire x1="45.72" y1="127" x2="43.18" y2="127" width="0.1524" layer="91"/>
-<label x="43.18" y="127" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
-<pinref part="PAD9" gate="G$1" pin="P$1"/>
-</segment>
-</net>
 <net name="POWER_ENABLE_IN" class="0">
 <segment>
 <label x="43.18" y="96.52" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
@@ -5583,7 +5561,7 @@ when running on discharged 8S battery</text>
 <label x="312.42" y="91.44" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="PHASE_C_GND" class="0">
+<net name="PHASE_C_SOURCE_LOW" class="0">
 <segment>
 <label x="45.72" y="193.04" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 <wire x1="45.72" y1="193.04" x2="48.26" y2="193.04" width="0.1524" layer="91"/>
