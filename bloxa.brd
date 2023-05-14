@@ -10190,11 +10190,11 @@
 <attribute name="MANF#" value="LTST-C19HE1WT" x="0.5" y="-13.3" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="NAME" x="0.5" y="-15.05" size="0.6" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
 </element>
-<element name="R14" library="rc" library_urn="urn:adsk.eagle:library:2539423" package="R0402" package3d_urn="urn:adsk.eagle:package:2539456/2" value="680R" x="10.825" y="-5.325" smashed="yes">
+<element name="R14" library="rc" library_urn="urn:adsk.eagle:library:2539423" package="R0402" package3d_urn="urn:adsk.eagle:package:2539456/2" value="1K74" x="10.825" y="-5.325" smashed="yes">
 <attribute name="AEC-Q" value="AEC-Q200" x="10.825" y="-5.325" size="1.778" layer="27" display="off"/>
-<attribute name="DIGIKEY#" value="CRCW0402680RFKEDDatasheet " x="10.825" y="-5.325" size="1.778" layer="27" display="off"/>
+<attribute name="DIGIKEY#" value="541-1.74KLCT-ND" x="10.825" y="-5.325" size="1.778" layer="27" display="off"/>
 <attribute name="MANF" value="Vishay Dale" x="10.825" y="-5.325" size="1.778" layer="27" display="off"/>
-<attribute name="MANF#" value="CRCW0402680RFKED" x="10.825" y="-5.325" size="1.778" layer="27" display="off"/>
+<attribute name="MANF#" value="CRCW04021K74FKED" x="10.825" y="-5.325" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="10.825" y="-5.325" size="0.5" layer="25" font="vector" ratio="15" align="center"/>
 <attribute name="PACKAGE" value="0402" x="10.825" y="-5.325" size="1.778" layer="27" display="off"/>
 <attribute name="TOLERANCE" value="1%" x="10.825" y="-5.325" size="1.778" layer="27" display="off"/>
@@ -10203,7 +10203,7 @@
 <element name="PAD48" library="PADS" library_urn="urn:adsk.eagle:library:3188696" package="1.5X1.5" package3d_urn="urn:adsk.eagle:package:15477730/1" value="PAD-S-1.5" x="10.425" y="-9.87" smashed="yes"/>
 </elements>
 <signals>
-<signal name="PHASE_A_GND">
+<signal name="PHASE_A_SOURCE_LOW">
 <contactref element="PAD28" pad="P$1"/>
 <contactref element="R4" pad="1"/>
 <contactref element="R4" pad="11"/>
@@ -10227,6 +10227,9 @@
 <wire x1="-10.2" y1="6.55" x2="-10.2" y2="4.65784375" width="0.2" layer="16"/>
 <wire x1="-10.2" y1="4.65784375" x2="-10.675" y2="4.18284375" width="0.2" layer="16"/>
 <wire x1="-10.675" y1="4.18284375" x2="-10.675" y2="3.43578125" width="0.2" layer="16"/>
+<wire x1="-7" y1="2.675" x2="-7" y2="0.075" width="0" layer="19" extent="1-1"/>
+<wire x1="-6.95" y1="3.7" x2="-7" y2="2.675" width="0" layer="19" extent="1-1"/>
+<wire x1="-8.565" y1="7.05" x2="-6.95" y2="3.7" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PHASE_B" class="1">
 <contactref element="PAD30" pad="P$1"/>
@@ -10300,7 +10303,7 @@
 <wire x1="-11.5" y1="2.05" x2="-7.25" y2="2.05" width="0.2" layer="16"/>
 <wire x1="-6.775" y1="2.525" x2="-5.31924375" y2="2.525" width="0.2" layer="16"/>
 </signal>
-<signal name="PHASE_B_GND">
+<signal name="PHASE_B_SOURCE_LOW">
 <contactref element="PAD32" pad="P$1"/>
 <contactref element="R10" pad="1"/>
 <contactref element="R10" pad="11"/>
@@ -10321,7 +10324,9 @@
 <wire x1="-4.175" y1="-1.25" x2="-12.2" y2="-1.25" width="0.2" layer="16"/>
 <wire x1="-12.45" y1="-1" x2="-12.2" y2="-1.25" width="0.2" layer="16"/>
 <wire x1="-1.675" y1="-0.125" x2="1.03373125" y2="2.58373125" width="0.2" layer="16"/>
-<wire x1="2" y1="2.675" x2="2" y2="0.075" width="0" layer="19" extent="1-1"/>
+<wire x1="1.25873125" y1="3.81626875" x2="0.635" y2="7.05" width="0" layer="19" extent="1-1"/>
+<wire x1="2" y1="2.675" x2="1.25873125" y2="3.81626875" width="0" layer="19" extent="1-1"/>
+<wire x1="2" y1="0.075" x2="2" y2="2.675" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PHASE_A_GATE_HIGH" class="1">
 <contactref element="PAD25" pad="P$1"/>
@@ -10526,7 +10531,7 @@
 <wire x1="0.825" y1="-0.75" x2="0.575" y2="-1" width="0.15" layer="16"/>
 <wire x1="0.825" y1="1.075" x2="0.825" y2="-0.75" width="0.15" layer="16"/>
 </signal>
-<signal name="RGB_LED_R">
+<signal name="RGB_LED_RED">
 <contactref element="PAD12" pad="P$1"/>
 <contactref element="R7" pad="2"/>
 <wire x1="9.3" y1="-5.325" x2="9.9" y2="-4.725" width="0.15" layer="1"/>
@@ -10534,7 +10539,7 @@
 <wire x1="11.9735375" y1="-3" x2="10.2485375" y2="-4.725" width="0.15" layer="1"/>
 <wire x1="12.45" y1="-3" x2="11.9735375" y2="-3" width="0.15" layer="1"/>
 </signal>
-<signal name="RGB_LED_G">
+<signal name="RGB_LED_GREEN">
 <contactref element="PAD11" pad="P$1"/>
 <contactref element="R6" pad="2"/>
 <wire x1="12.45" y1="-1" x2="11.525" y2="-1.925" width="0.15" layer="1"/>
@@ -10546,7 +10551,7 @@
 <wire x1="7.725" y1="-4.79926875" x2="7.725" y2="-5.8" width="0.15" layer="1"/>
 <wire x1="7.725" y1="-5.8" x2="8.4" y2="-6.475" width="0.15" layer="1"/>
 </signal>
-<signal name="RGB_LED_B">
+<signal name="RGB_LED_BLUE">
 <contactref element="PAD10" pad="P$1"/>
 <contactref element="R5" pad="2"/>
 <wire x1="11.775" y1="0.3" x2="11.775" y2="-1.175" width="0.15" layer="1"/>
@@ -10722,12 +10727,6 @@
 <wire x1="11.375" y1="-5.275" x2="11.325" y2="-5.325" width="0.3" layer="1"/>
 <wire x1="12.375" y1="-5.275" x2="11.375" y2="-5.275" width="0.3" layer="1"/>
 </signal>
-<signal name="USB+">
-<contactref element="PAD7" pad="P$1"/>
-</signal>
-<signal name="USB-">
-<contactref element="PAD8" pad="P$1"/>
-</signal>
 <signal name="PHASE_B_GATE_HIGH" class="1">
 <contactref element="PAD29" pad="P$1"/>
 <contactref element="R8" pad="1"/>
@@ -10746,9 +10745,6 @@
 <wire x1="-7.45" y1="2.5" x2="-6.975" y2="2.975" width="0.2" layer="16"/>
 <wire x1="-6.975" y1="2.975" x2="-5.50564375" y2="2.975" width="0.2" layer="16"/>
 <wire x1="-5.50564375" y1="2.975" x2="-5.490321875" y2="2.990321875" width="0.2" layer="16"/>
-</signal>
-<signal name="USB_VBUS">
-<contactref element="PAD9" pad="P$1"/>
 </signal>
 <signal name="POWER_ENABLE_IN">
 <contactref element="PAD18" pad="P$1"/>
@@ -10781,7 +10777,7 @@
 <wire x1="4.475" y1="-4.825" x2="3.7" y2="-4.05" width="0.15" layer="1"/>
 <wire x1="6.825" y1="-7.95" x2="6.825" y2="-6.3" width="0.15" layer="1"/>
 </signal>
-<signal name="PHASE_C_GND">
+<signal name="PHASE_C_SOURCE_LOW">
 <contactref element="PAD36" pad="P$1"/>
 <contactref element="S1" pad="IN"/>
 <wire x1="9.8" y1="3" x2="9.75" y2="2.95" width="0.2" layer="16"/>
