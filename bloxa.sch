@@ -4475,7 +4475,13 @@ http://www.bccomponents.com/</description>
 <part name="PAD44" library="PADS" library_urn="urn:adsk.eagle:library:3188696" deviceset="PAD" device="-HOLE_1.5" package3d_urn="urn:adsk.eagle:package:3332368/3" value="PAD-HOLE_1.5">
 <variant name="Basic" populate="no"/>
 </part>
-<part name="R4" library="SHUNT_RESISTORS" library_urn="urn:adsk.eagle:library:2644450" deviceset="CURRENT_SHUNT_KELVIN" device="-2512-KELVIN" package3d_urn="urn:adsk.eagle:package:3560627/3" technology="-0.010R" value="10 mOhms"/>
+<part name="R4" library="SHUNT_RESISTORS" library_urn="urn:adsk.eagle:library:2644450" deviceset="CURRENT_SHUNT_KELVIN" device="-2512-KELVIN" package3d_urn="urn:adsk.eagle:package:3560627/3" technology="-0.010R" value="3 mOhms">
+<attribute name="DIGIKEY#" value="2019-TLR3APSDTE3L00F50CT-ND"/>
+<attribute name="MANF" value="KOA Speer Electronics, Inc."/>
+<attribute name="MANF#" value="TLR3APSDTE3L00F50"/>
+<attribute name="PACKAGE" value="2512"/>
+<attribute name="POWER" value="5W"/>
+</part>
 <part name="IC1" library="misc" library_urn="urn:adsk.eagle:library:5347860" deviceset="MCP9700" device="-SC70-5" package3d_urn="urn:adsk.eagle:package:7365869/3"/>
 <part name="C5" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="0.1µF" device="-0402" package3d_urn="urn:adsk.eagle:package:2539379/2" technology="-16V_10%_X7R" value="0.1µF"/>
 <part name="R1" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" deviceset="4R3" device="-0402" package3d_urn="urn:adsk.eagle:package:2539512/2" technology="-5%" value="4R3"/>
@@ -4483,7 +4489,13 @@ http://www.bccomponents.com/</description>
 <part name="PAD45" library="PADS" library_urn="urn:adsk.eagle:library:3188696" deviceset="PAD" device="-HOLE_1.5" package3d_urn="urn:adsk.eagle:package:3332368/3" value="PAD-HOLE_1.5">
 <variant name="Basic" populate="no"/>
 </part>
-<part name="R10" library="SHUNT_RESISTORS" library_urn="urn:adsk.eagle:library:2644450" deviceset="CURRENT_SHUNT_KELVIN" device="-2512-KELVIN" package3d_urn="urn:adsk.eagle:package:3560627/3" technology="-0.010R" value="10 mOhms"/>
+<part name="R10" library="SHUNT_RESISTORS" library_urn="urn:adsk.eagle:library:2644450" deviceset="CURRENT_SHUNT_KELVIN" device="-2512-KELVIN" package3d_urn="urn:adsk.eagle:package:3560627/3" technology="-0.010R" value="3 mOhms">
+<attribute name="DIGIKEY#" value="2019-TLR3APSDTE3L00F50CT-ND"/>
+<attribute name="MANF" value="KOA Speer Electronics, Inc."/>
+<attribute name="MANF#" value="TLR3APSDTE3L00F50"/>
+<attribute name="PACKAGE" value="2512"/>
+<attribute name="POWER" value="5W"/>
+</part>
 <part name="R8" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" deviceset="4R3" device="-0402" package3d_urn="urn:adsk.eagle:package:2539512/2" technology="-5%" value="4R3"/>
 <part name="R9" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" deviceset="4R3" device="-0402" package3d_urn="urn:adsk.eagle:package:2539512/2" technology="-5%" value="4R3"/>
 <part name="PAD46" library="PADS" library_urn="urn:adsk.eagle:library:3188696" deviceset="PAD" device="-HOLE_1.5" package3d_urn="urn:adsk.eagle:package:3332368/3" value="PAD-HOLE_1.5">
@@ -4923,6 +4935,7 @@ higher than maximum phase current at 40 A</text>
 <instance part="R4" gate="G$1" x="236.22" y="185.42" smashed="yes" rot="R270">
 <attribute name="NAME" x="239.014" y="185.42" size="1.778" layer="95" font="vector" ratio="15" rot="R90" align="center"/>
 <attribute name="VALUE" x="233.68" y="185.42" size="1.016" layer="95" font="vector" ratio="15" rot="R270" align="center"/>
+<attribute name="PACKAGE" x="236.22" y="185.42" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="IC1" gate="G$1" x="177.8" y="182.88" smashed="yes">
 <attribute name="NAME" x="181.61" y="193.294" size="1.778" layer="95" font="vector" ratio="15" align="bottom-center"/>
@@ -4952,6 +4965,7 @@ higher than maximum phase current at 40 A</text>
 <instance part="R10" gate="G$1" x="302.26" y="182.88" smashed="yes" rot="R270">
 <attribute name="NAME" x="305.054" y="182.88" size="1.778" layer="95" font="vector" ratio="15" rot="R90" align="center"/>
 <attribute name="VALUE" x="299.72" y="182.88" size="1.016" layer="95" font="vector" ratio="15" rot="R270" align="center"/>
+<attribute name="PACKAGE" x="302.26" y="182.88" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="R8" gate="G$1" x="287.02" y="226.06" smashed="yes">
 <attribute name="NAME" x="287.02" y="226.06" size="1.27" layer="95" font="vector" align="center"/>

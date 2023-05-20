@@ -9945,12 +9945,13 @@
 <element name="PAD44" library="PADS" library_urn="urn:adsk.eagle:library:3188696" package="HOLE_1.5" package3d_urn="urn:adsk.eagle:package:3332368/3" value="PAD-HOLE_1.5" x="-4" y="17.15" smashed="yes">
 <attribute name="BOM" value="EXCLUDE" x="-11" y="24.15" size="1.778" layer="27" display="off"/>
 </element>
-<element name="R4" library="SHUNT_RESISTORS" library_urn="urn:adsk.eagle:library:2644450" package="R2512-KELVIN" package3d_urn="urn:adsk.eagle:package:3560627/3" value="10 mOhms" x="-4.5" y="1.375" locked="yes" smashed="yes">
-<attribute name="DIGIKEY#" value="CSNL2512FT10L0CT-ND" x="-4.5" y="10.375" size="1.778" layer="27" display="off"/>
-<attribute name="MANF" value="Stackpole Electronics Inc" x="-4.5" y="10.375" size="1.778" layer="27" display="off"/>
-<attribute name="MANF#" value="CSNL2512FT10L0" x="-4.5" y="10.375" size="1.778" layer="27" display="off"/>
+<element name="R4" library="SHUNT_RESISTORS" library_urn="urn:adsk.eagle:library:2644450" package="R2512-KELVIN" package3d_urn="urn:adsk.eagle:package:3560627/3" value="3 mOhms" x="-4.5" y="1.375" locked="yes" smashed="yes">
+<attribute name="DIGIKEY#" value="2019-TLR3APSDTE3L00F50CT-ND" x="-4.5" y="10.375" size="1.778" layer="27" display="off"/>
+<attribute name="MANF" value="KOA Speer Electronics, Inc." x="-4.5" y="10.375" size="1.778" layer="27" display="off"/>
+<attribute name="MANF#" value="TLR3APSDTE3L00F50" x="-4.5" y="10.375" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="-4.5" y="1.375" size="1.5" layer="25" font="vector" ratio="15" align="center"/>
-<attribute name="POWER" value="2W" x="-4.5" y="10.375" size="1.778" layer="27" display="off"/>
+<attribute name="PACKAGE" value="2512" x="-4.5" y="1.375" size="1.778" layer="27" display="off"/>
+<attribute name="POWER" value="5W" x="-4.5" y="10.375" size="1.778" layer="27" display="off"/>
 <attribute name="TC" value="±50ppm/°C" x="-4.5" y="10.375" size="1.778" layer="27" display="off"/>
 <attribute name="TOLERANCE" value="±1%" x="-4.5" y="10.375" size="1.778" layer="27" display="off"/>
 </element>
@@ -9993,12 +9994,13 @@
 <element name="PAD45" library="PADS" library_urn="urn:adsk.eagle:library:3188696" package="HOLE_1.5" package3d_urn="urn:adsk.eagle:package:3332368/3" value="PAD-HOLE_1.5" x="0" y="17.15" smashed="yes" rot="R270">
 <attribute name="BOM" value="EXCLUDE" x="-18" y="27.15" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="R10" library="SHUNT_RESISTORS" library_urn="urn:adsk.eagle:library:2644450" package="R2512-KELVIN" package3d_urn="urn:adsk.eagle:package:3560627/3" value="10 mOhms" x="4.5" y="1.375" locked="yes" smashed="yes">
-<attribute name="DIGIKEY#" value="CSNL2512FT10L0CT-ND" x="-4.5" y="-14.625" size="1.778" layer="27" display="off"/>
-<attribute name="MANF" value="Stackpole Electronics Inc" x="-4.5" y="-14.625" size="1.778" layer="27" display="off"/>
-<attribute name="MANF#" value="CSNL2512FT10L0" x="-4.5" y="-14.625" size="1.778" layer="27" display="off"/>
+<element name="R10" library="SHUNT_RESISTORS" library_urn="urn:adsk.eagle:library:2644450" package="R2512-KELVIN" package3d_urn="urn:adsk.eagle:package:3560627/3" value="3 mOhms" x="4.5" y="1.375" locked="yes" smashed="yes">
+<attribute name="DIGIKEY#" value="2019-TLR3APSDTE3L00F50CT-ND" x="-4.5" y="-14.625" size="1.778" layer="27" display="off"/>
+<attribute name="MANF" value="KOA Speer Electronics, Inc." x="-4.5" y="-14.625" size="1.778" layer="27" display="off"/>
+<attribute name="MANF#" value="TLR3APSDTE3L00F50" x="-4.5" y="-14.625" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="4.5" y="1.375" size="1.5" layer="25" font="vector" ratio="15" align="center"/>
-<attribute name="POWER" value="2W" x="-4.5" y="-14.625" size="1.778" layer="27" display="off"/>
+<attribute name="PACKAGE" value="2512" x="4.5" y="1.375" size="1.778" layer="27" display="off"/>
+<attribute name="POWER" value="5W" x="-4.5" y="-14.625" size="1.778" layer="27" display="off"/>
 <attribute name="TC" value="±50ppm/°C" x="-4.5" y="-14.625" size="1.778" layer="27" display="off"/>
 <attribute name="TOLERANCE" value="±1%" x="-4.5" y="-14.625" size="1.778" layer="27" display="off"/>
 </element>
