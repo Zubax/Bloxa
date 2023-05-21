@@ -210,25 +210,6 @@
 <text x="343.916" y="4.953" size="2.54" layer="94">Sheet:</text>
 <frame x1="0" y1="0" x2="387.35" y2="260.35" columns="8" rows="5" layer="94"/>
 </symbol>
-<symbol name="A5L-LOC" urn="urn:adsk.eagle:symbol:13879/1" library_version="1">
-<wire x1="85.09" y1="3.81" x2="85.09" y2="24.13" width="0.1016" layer="94"/>
-<wire x1="85.09" y1="24.13" x2="139.065" y2="24.13" width="0.1016" layer="94"/>
-<wire x1="139.065" y1="24.13" x2="180.34" y2="24.13" width="0.1016" layer="94"/>
-<wire x1="170.18" y1="3.81" x2="170.18" y2="8.89" width="0.1016" layer="94"/>
-<wire x1="170.18" y1="8.89" x2="180.34" y2="8.89" width="0.1016" layer="94"/>
-<wire x1="170.18" y1="8.89" x2="139.065" y2="8.89" width="0.1016" layer="94"/>
-<wire x1="139.065" y1="8.89" x2="139.065" y2="3.81" width="0.1016" layer="94"/>
-<wire x1="139.065" y1="8.89" x2="139.065" y2="13.97" width="0.1016" layer="94"/>
-<wire x1="139.065" y1="13.97" x2="180.34" y2="13.97" width="0.1016" layer="94"/>
-<wire x1="139.065" y1="13.97" x2="139.065" y2="19.05" width="0.1016" layer="94"/>
-<wire x1="139.065" y1="19.05" x2="180.34" y2="19.05" width="0.1016" layer="94"/>
-<wire x1="139.065" y1="19.05" x2="139.065" y2="24.13" width="0.1016" layer="94"/>
-<text x="140.97" y="15.24" size="2.54" layer="94">&gt;DRAWING_NAME</text>
-<text x="140.97" y="10.16" size="2.286" layer="94">&gt;LAST_DATE_TIME</text>
-<text x="154.305" y="5.08" size="2.54" layer="94">&gt;SHEET</text>
-<text x="140.716" y="4.953" size="2.54" layer="94">Sheet:</text>
-<frame x1="0" y1="0" x2="184.15" y2="133.35" columns="4" rows="4" layer="94"/>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="A3L-LOC" urn="urn:adsk.eagle:component:13942/1" prefix="FRAME" uservalue="yes" library_version="1">
@@ -236,19 +217,6 @@
 DIN A3, landscape with location and doc. field</description>
 <gates>
 <gate name="G$1" symbol="A3L-LOC" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="A5L-LOC" urn="urn:adsk.eagle:component:13933/1" prefix="FRAME" uservalue="yes" library_version="1">
-<description>A5L LOC</description>
-<gates>
-<gate name="G$1" symbol="A5L-LOC" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -4475,7 +4443,13 @@ http://www.bccomponents.com/</description>
 <part name="PAD44" library="PADS" library_urn="urn:adsk.eagle:library:3188696" deviceset="PAD" device="-HOLE_1.5" package3d_urn="urn:adsk.eagle:package:3332368/3" value="PAD-HOLE_1.5">
 <variant name="Basic" populate="no"/>
 </part>
-<part name="R4" library="SHUNT_RESISTORS" library_urn="urn:adsk.eagle:library:2644450" deviceset="CURRENT_SHUNT_KELVIN" device="-2512-KELVIN" package3d_urn="urn:adsk.eagle:package:3560627/3" technology="-0.010R" value="10 mOhms"/>
+<part name="R4" library="SHUNT_RESISTORS" library_urn="urn:adsk.eagle:library:2644450" deviceset="CURRENT_SHUNT_KELVIN" device="-2512-KELVIN" package3d_urn="urn:adsk.eagle:package:3560627/3" technology="-0.010R" value="3 mOhms">
+<attribute name="DIGIKEY#" value="2019-TLR3APSDTE3L00F50CT-ND"/>
+<attribute name="MANF" value="KOA Speer Electronics, Inc."/>
+<attribute name="MANF#" value="TLR3APSDTE3L00F50"/>
+<attribute name="PACKAGE" value="2512"/>
+<attribute name="POWER" value="5W"/>
+</part>
 <part name="IC1" library="misc" library_urn="urn:adsk.eagle:library:5347860" deviceset="MCP9700" device="-SC70-5" package3d_urn="urn:adsk.eagle:package:7365869/3"/>
 <part name="C5" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="0.1µF" device="-0402" package3d_urn="urn:adsk.eagle:package:2539379/2" technology="-16V_10%_X7R" value="0.1µF"/>
 <part name="R1" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" deviceset="4R3" device="-0402" package3d_urn="urn:adsk.eagle:package:2539512/2" technology="-5%" value="4R3"/>
@@ -4483,7 +4457,13 @@ http://www.bccomponents.com/</description>
 <part name="PAD45" library="PADS" library_urn="urn:adsk.eagle:library:3188696" deviceset="PAD" device="-HOLE_1.5" package3d_urn="urn:adsk.eagle:package:3332368/3" value="PAD-HOLE_1.5">
 <variant name="Basic" populate="no"/>
 </part>
-<part name="R10" library="SHUNT_RESISTORS" library_urn="urn:adsk.eagle:library:2644450" deviceset="CURRENT_SHUNT_KELVIN" device="-2512-KELVIN" package3d_urn="urn:adsk.eagle:package:3560627/3" technology="-0.010R" value="10 mOhms"/>
+<part name="R10" library="SHUNT_RESISTORS" library_urn="urn:adsk.eagle:library:2644450" deviceset="CURRENT_SHUNT_KELVIN" device="-2512-KELVIN" package3d_urn="urn:adsk.eagle:package:3560627/3" technology="-0.010R" value="3 mOhms">
+<attribute name="DIGIKEY#" value="2019-TLR3APSDTE3L00F50CT-ND"/>
+<attribute name="MANF" value="KOA Speer Electronics, Inc."/>
+<attribute name="MANF#" value="TLR3APSDTE3L00F50"/>
+<attribute name="PACKAGE" value="2512"/>
+<attribute name="POWER" value="5W"/>
+</part>
 <part name="R8" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" deviceset="4R3" device="-0402" package3d_urn="urn:adsk.eagle:package:2539512/2" technology="-5%" value="4R3"/>
 <part name="R9" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" deviceset="4R3" device="-0402" package3d_urn="urn:adsk.eagle:package:2539512/2" technology="-5%" value="4R3"/>
 <part name="PAD46" library="PADS" library_urn="urn:adsk.eagle:library:3188696" deviceset="PAD" device="-HOLE_1.5" package3d_urn="urn:adsk.eagle:package:3332368/3" value="PAD-HOLE_1.5">
@@ -4572,7 +4552,6 @@ http://www.bccomponents.com/</description>
 <part name="GND25" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="GND" device="" value="GND"/>
 <part name="PAD47" library="PADS" library_urn="urn:adsk.eagle:library:3188696" deviceset="PAD" device="-S-1.5" package3d_urn="urn:adsk.eagle:package:15477730/1"/>
 <part name="PAD48" library="PADS" library_urn="urn:adsk.eagle:library:3188696" deviceset="PAD" device="-S-1.5" package3d_urn="urn:adsk.eagle:package:15477730/1"/>
-<part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A5L-LOC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4923,6 +4902,7 @@ higher than maximum phase current at 40 A</text>
 <instance part="R4" gate="G$1" x="236.22" y="185.42" smashed="yes" rot="R270">
 <attribute name="NAME" x="239.014" y="185.42" size="1.778" layer="95" font="vector" ratio="15" rot="R90" align="center"/>
 <attribute name="VALUE" x="233.68" y="185.42" size="1.016" layer="95" font="vector" ratio="15" rot="R270" align="center"/>
+<attribute name="PACKAGE" x="236.22" y="185.42" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="IC1" gate="G$1" x="177.8" y="182.88" smashed="yes">
 <attribute name="NAME" x="181.61" y="193.294" size="1.778" layer="95" font="vector" ratio="15" align="bottom-center"/>
@@ -4952,6 +4932,7 @@ higher than maximum phase current at 40 A</text>
 <instance part="R10" gate="G$1" x="302.26" y="182.88" smashed="yes" rot="R270">
 <attribute name="NAME" x="305.054" y="182.88" size="1.778" layer="95" font="vector" ratio="15" rot="R90" align="center"/>
 <attribute name="VALUE" x="299.72" y="182.88" size="1.016" layer="95" font="vector" ratio="15" rot="R270" align="center"/>
+<attribute name="PACKAGE" x="302.26" y="182.88" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="R8" gate="G$1" x="287.02" y="226.06" smashed="yes">
 <attribute name="NAME" x="287.02" y="226.06" size="1.27" layer="95" font="vector" align="center"/>
@@ -6036,27 +6017,6 @@ higher than maximum phase current at 40 A</text>
 </net>
 </nets>
 </sheet>
-<sheet>
-<description>changelog</description>
-<plain>
-<text x="7.62" y="124.46" size="1.778" layer="97" font="vector" align="top-left">-Current shunts replaced (5 mOhms replaced with 10 mOhms)
--Overcurrent protection added. Itrip is ~35 A
--RCPWM th connector replaced with smd solder pads
--Some design notes added to the schematic
--TVS diode (D1) replaced with one that has lower breaksdown voltage</text>
-</plain>
-<instances>
-<instance part="FRAME2" gate="G$1" x="0" y="0" smashed="yes">
-<attribute name="DRAWING_NAME" x="140.97" y="15.24" size="2.54" layer="94"/>
-<attribute name="LAST_DATE_TIME" x="140.97" y="10.16" size="2.286" layer="94"/>
-<attribute name="SHEET" x="154.305" y="5.08" size="2.54" layer="94"/>
-</instance>
-</instances>
-<busses>
-</busses>
-<nets>
-</nets>
-</sheet>
 </sheets>
 <errors>
 <approved hash="106,1,45.72,137.16,CAN2_LED,,,,,"/>
@@ -6076,7 +6036,6 @@ higher than maximum phase current at 40 A</text>
 <approved hash="110,1,358.14,121.92,N$22,N$23,,,,"/>
 <approved hash="110,1,358.14,121.92,N$22,N$23,,,,"/>
 <approved hash="113,1,193.571,130.071,FRAME1,,,,,"/>
-<approved hash="113,2,91.971,66.571,FRAME2,,,,,"/>
 </errors>
 </schematic>
 </drawing>
