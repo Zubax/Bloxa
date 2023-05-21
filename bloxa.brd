@@ -188,7 +188,7 @@
 <wire x1="-10.95" y1="18.65" x2="-12.45" y2="17.15" width="0.01" layer="20" curve="90"/>
 <wire x1="-12.45" y1="17.15" x2="-12.45" y2="-13.45" width="0.01" layer="20" locked="yes"/>
 <wire x1="-12.45" y1="-13.45" x2="-10.95" y2="-14.95" width="0.01" layer="20" curve="90" locked="yes"/>
-<text x="-5.45" y="-2.15" size="0.8" layer="1" font="vector" ratio="20" align="bottom-right">BLOXA 0.2</text>
+<text x="-5.45" y="-2.15" size="0.8" layer="1" font="vector" ratio="20" align="bottom-right">BLOXA 1.0</text>
 <text x="-8.35" y="16.8" size="0.6" layer="21" font="vector" ratio="15" align="center">C1</text>
 <text x="0" y="16.025" size="0.6" layer="21" font="vector" ratio="15" align="center">C2</text>
 <text x="8.4" y="16.8" size="0.6" layer="21" font="vector" ratio="15" align="center">C3</text>
@@ -10229,9 +10229,6 @@
 <wire x1="-10.2" y1="6.55" x2="-10.2" y2="4.65784375" width="0.2" layer="16"/>
 <wire x1="-10.2" y1="4.65784375" x2="-10.675" y2="4.18284375" width="0.2" layer="16"/>
 <wire x1="-10.675" y1="4.18284375" x2="-10.675" y2="3.43578125" width="0.2" layer="16"/>
-<wire x1="-7" y1="2.675" x2="-7" y2="0.075" width="0" layer="19" extent="1-1"/>
-<wire x1="-6.95" y1="3.7" x2="-7" y2="2.675" width="0" layer="19" extent="1-1"/>
-<wire x1="-8.565" y1="7.05" x2="-6.95" y2="3.7" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PHASE_B" class="1">
 <contactref element="PAD30" pad="P$1"/>
@@ -10326,9 +10323,7 @@
 <wire x1="-4.175" y1="-1.25" x2="-12.2" y2="-1.25" width="0.2" layer="16"/>
 <wire x1="-12.45" y1="-1" x2="-12.2" y2="-1.25" width="0.2" layer="16"/>
 <wire x1="-1.675" y1="-0.125" x2="1.03373125" y2="2.58373125" width="0.2" layer="16"/>
-<wire x1="1.25873125" y1="3.81626875" x2="0.635" y2="7.05" width="0" layer="19" extent="1-1"/>
-<wire x1="2" y1="2.675" x2="1.25873125" y2="3.81626875" width="0" layer="19" extent="1-1"/>
-<wire x1="2" y1="0.075" x2="2" y2="2.675" width="0" layer="19" extent="1-1"/>
+<wire x1="2" y1="2.675" x2="2" y2="0.075" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PHASE_A_GATE_HIGH" class="1">
 <contactref element="PAD25" pad="P$1"/>
